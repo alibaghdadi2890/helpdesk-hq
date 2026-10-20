@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "ef152cc0-365a-4470-b7af-f982b240582f",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/ef152cc0-365a-4470-b7af-f982b240582f",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2162",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2162,
+  "subject": "Company name wrong on invoices",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "b81282ff-8477-4441-b271-2e68af6b8704",
+    "code": "CUS-10513",
+    "legacy_number": 10513,
+    "name": "Lama Zahran",
+    "email": "lama@zahran-architects.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2025-11-19T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/b81282ff-8477-4441-b271-2e68af6b8704.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_b81282ff",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T08:31:14.852Z",
+    "resolution_due_at": "2026-10-27T08:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "58af21ba-897c-4c73-9a70-4f339ecb26d5",
+      "created_at": "2026-10-20T08:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "b81282ff-8477-4441-b271-2e68af6b8704",
+        "name": "Lama Zahran",
+        "email": "lama@zahran-architects.test"
+      },
+      "internal": false,
+      "body": "Our invoices show our old company name and no VAT number. How can we fix this for future invoices, and can last month's be corrected?",
+      "body_html": "<div dir=\"ltr\"><p>Our invoices show our old company name and no VAT number. How can we fix this for future invoices, and can last month's be corrected?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T08:31:14.852Z",
+    "updated_at": "2026-10-20T08:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.822Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T08:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

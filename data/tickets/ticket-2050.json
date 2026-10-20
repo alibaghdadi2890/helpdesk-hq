@@ -1,0 +1,228 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "022c1124-61c0-40da-a255-6bd5d7111d47",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/022c1124-61c0-40da-a255-6bd5d7111d47",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2050",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2050,
+  "subject": "Suggestion: bulk editing of tags",
+  "status": "open",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": {
+    "id": "da104b4d-aee5-4a37-84b8-791cbe100533",
+    "name": "Product Feedback"
+  },
+  "assignee": {
+    "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+    "name": "Tarek Aoun",
+    "email": "tarek@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a32b5150-9376-4ec7-ad8d-e729c368f7dd.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "f974a67c-5329-4786-8089-045607a8b150",
+    "code": "CUS-10042",
+    "legacy_number": 10042,
+    "name": "Tony Najjar",
+    "email": "tony.najjar@example.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-06-14T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/f974a67c-5329-4786-8089-045607a8b150.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_f974a67c",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-09T14:00:00.000Z",
+    "resolution_due_at": "2026-10-15T14:00:00.000Z",
+    "first_response_at": "2026-10-09T08:41:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "573ec4a9-d7a5-4541-978c-bafdd6a4b209",
+      "created_at": "2026-10-08T14:01:39.509Z",
+      "author": {
+        "type": "customer",
+        "id": "f974a67c-5329-4786-8089-045607a8b150",
+        "name": "Tony Najjar",
+        "email": "tony.najjar@example.test"
+      },
+      "internal": false,
+      "body": "We'd love bulk editing of tags. We currently work around it with a spreadsheet.",
+      "body_html": "<div dir=\"ltr\"><p>We'd love bulk editing of tags. We currently work around it with a spreadsheet.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "5abd44f0-289c-4187-b6ba-d2e21eac09e9",
+      "created_at": "2026-10-09T08:41:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks for your patience, Tony. I've passed this to our technical team and will update you as soon as I hear back.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks for your patience, Tony. I've passed this to our technical team and will update you as soon as I hear back.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "6e0dee47-2e88-41eb-8a16-da11c4a60d37",
+      "created_at": "2026-10-09T23:41:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "f974a67c-5329-4786-8089-045607a8b150",
+        "name": "Tony Najjar",
+        "email": "tony.najjar@example.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "be295b6b-2ecf-45a1-b0ed-0ef27ae9b9cd",
+      "created_at": "2026-10-10T02:41:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Tony. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Tony. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "8c4ab0a7-44a9-430f-8ffe-b62145104d19",
+      "created_at": "2026-10-10T10:41:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "f974a67c-5329-4786-8089-045607a8b150",
+        "name": "Tony Najjar",
+        "email": "tony.najjar@example.test"
+      },
+      "internal": false,
+      "body": "Thanks, I'll wait for your update.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks, I'll wait for your update.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "64144f86-9c18-4bfa-a300-75cea2f3afaf",
+      "created_at": "2026-10-10T11:41:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Tony. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Tony. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-10-08T14:01:39.509Z",
+    "updated_at": "2026-10-10T11:41:00.000Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.891Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-08T14:01:39.509Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-10-08T14:01:39.509Z",
+      "actor": "system",
+      "to": "Product Feedback"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-10-08T14:01:39.509Z",
+      "actor": "system",
+      "to": "Tarek Aoun"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-10-09T08:41:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

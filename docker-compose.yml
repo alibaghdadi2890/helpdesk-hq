@@ -1,0 +1,20 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16   # PostgreSQL 16 with pgvector, used from Chapter 4
+    environment:
+      POSTGRES_USER: helpdesk
+      POSTGRES_PASSWORD: helpdesk
+      POSTGRES_DB: helpdesk
+    ports: ["${DB_PORT:-5432}:5432"]
+    volumes: ["db-data:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "helpdesk"]
+      interval: 2s
+      retries: 30
+
+  phoenix:
+    image: arizephoenix/phoenix:latest   # tracing UI on http://localhost:6006
+    ports: ["6006:6006"]
+
+volumes:
+  db-data:

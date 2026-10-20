@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "16c0f034-e69a-4535-bc61-e94af611f6fe",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/16c0f034-e69a-4535-bc61-e94af611f6fe",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2167",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2167,
+  "subject": "Card declined paying our invoice",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "5a211725-c1a0-4e0c-b448-8faa6971af20",
+    "code": "CUS-10519",
+    "legacy_number": 10519,
+    "name": "Arjun Nair",
+    "email": "arjun@nair-imports.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-05-13T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/5a211725-c1a0-4e0c-b448-8faa6971af20.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_5a211725",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T13:31:14.852Z",
+    "resolution_due_at": "2026-10-27T13:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "1e40044c-d4a9-4d06-8bd6-1282db019c4d",
+      "created_at": "2026-10-20T13:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "5a211725-c1a0-4e0c-b448-8faa6971af20",
+        "name": "Arjun Nair",
+        "email": "arjun@nair-imports.test"
+      },
+      "internal": false,
+      "body": "Our card was declined when paying this month's invoice. The card is new and works everywhere else.",
+      "body_html": "<div dir=\"ltr\"><p>Our card was declined when paying this month's invoice. The card is new and works everywhere else.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T13:31:14.852Z",
+    "updated_at": "2026-10-20T13:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.836Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T13:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

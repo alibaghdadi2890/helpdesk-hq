@@ -1,0 +1,361 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "3bc608df-5c91-49bd-a8ea-81eabd24efb6",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/3bc608df-5c91-49bd-a8ea-81eabd24efb6",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1188",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1188,
+  "subject": "Can't log in after password reset",
+  "status": "open",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": {
+    "id": "9db24f74-acbb-4de8-b17e-a679b802116d",
+    "name": "Accounts"
+  },
+  "assignee": {
+    "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+    "name": "Maya Ghanem",
+    "email": "maya@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/b0128acf-dadd-457e-a5fa-5d2501abfe7b.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+    "code": "CUS-10518",
+    "legacy_number": 10518,
+    "name": "Karim Nassar",
+    "email": "karim.nassar@cedarwood.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-04-21T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/02015c87-6fb7-4b49-81d6-1f0c919e3d3f.png",
+    "ticket_count": 9,
+    "custom_fields": {
+      "crm_id": "crm_02015c87",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-19T14:00:00.000Z",
+    "resolution_due_at": "2026-10-23T14:00:00.000Z",
+    "first_response_at": "2026-10-18T13:11:14.852Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "027d096d-939e-4bf5-b330-475fd84b6a7b",
+      "created_at": "2026-10-18T12:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "I requested a password reset three times and never got the email. I can't log in at all. This looks like a bug in your login system.",
+      "body_html": "<div dir=\"ltr\"><p>I requested a password reset three times and never got the email. I can't log in at all. This looks like a bug in your login system.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "2017dab5-408b-4e76-b7a4-3717c4f25b0d",
+      "created_at": "2026-10-18T13:11:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Karim, sorry about that. Could you tell me the exact email address you entered on the reset page?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Karim, sorry about that. Could you tell me the exact email address you entered on the reset page?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "aed92314-d7e9-4b40-92ce-d8ca9552589f",
+      "created_at": "2026-10-18T13:41:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "karim.nasar@cedarwood.test, same as always.",
+      "body_html": "<div dir=\"ltr\"><p>karim.nasar@cedarwood.test, same as always.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "ccfe0ba0-c1ab-4a59-82f8-660923c14d24",
+      "created_at": "2026-10-18T13:43:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": true,
+      "body": "Account email is karim.nassar@cedarwood.test (double s). The reset requests went to an address that does not exist. Do not share other accounts' details.",
+      "body_html": "<div dir=\"ltr\"><p>Account email is karim.nassar@cedarwood.test (double s). The reset requests went to an address that does not exist. Do not share other accounts' details.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "31a31398-28d1-4ecb-8a9b-07617e194e3d",
+      "created_at": "2026-10-18T13:51:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Karim. Could you check the spelling of your email address on the reset page? Reset links only go to the exact address on the account.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Karim. Could you check the spelling of your email address on the reset page? Reset links only go to the exact address on the account.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "cab047fe-d329-4994-bcef-df42ffddf015",
+      "created_at": "2026-10-18T17:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "I'm sure it's right. I've used this email for years. Can you just reset it for me?",
+      "body_html": "<div dir=\"ltr\"><p>I'm sure it's right. I've used this email for years. Can you just reset it for me?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "1ec1006f-91b8-4d58-9433-af10952d583d",
+      "created_at": "2026-10-18T17:51:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "I understand. For security we can only send the link to the address on the account. An admin on your account can also send a reset from Settings > Users.",
+      "body_html": "<div dir=\"ltr\"><p>I understand. For security we can only send the link to the address on the account. An admin on your account can also send a reset from Settings &gt; Users.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "f96593de-cf31-44aa-bc57-c5cd8e7dec6e",
+      "created_at": "2026-10-18T22:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "Our admin is on holiday. This is really frustrating, I have tickets waiting.",
+      "body_html": "<div dir=\"ltr\"><p>Our admin is on holiday. This is really frustrating, I have tickets waiting.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "2ea8400a-ba57-4177-9c76-f38de3b79018",
+      "created_at": "2026-10-18T22:46:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "I'm sorry for the delay. Please try the reset once more and type the address slowly, letter by letter. The link is valid for 30 minutes.",
+      "body_html": "<div dir=\"ltr\"><p>I'm sorry for the delay. Please try the reset once more and type the address slowly, letter by letter. The link is valid for 30 minutes.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "b36fe75f-257b-4254-b333-b5f796107687",
+      "created_at": "2026-10-19T11:51:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "Tried again this morning. Still nothing in my inbox or spam.",
+      "body_html": "<div dir=\"ltr\"><p>Tried again this morning. Still nothing in my inbox or spam.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "b2c31e96-294e-49df-9b8e-6dc5106907cc",
+      "created_at": "2026-10-19T11:56:14.852Z",
+      "author": {
+        "type": "system",
+        "id": null,
+        "name": "Helpdesk HQ"
+      },
+      "internal": false,
+      "body": "Password reset requested for unknown address karim.nasar@cedarwood.test. No email sent.",
+      "body_html": "<div dir=\"ltr\"><p>Password reset requested for unknown address karim.nasar@cedarwood.test. No email sent.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "ad21bb54-09e9-4717-875e-fb731077d093",
+      "created_at": "2026-10-19T12:51:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "02015c87-6fb7-4b49-81d6-1f0c919e3d3f",
+        "name": "Karim Nassar",
+        "email": "karim.nassar@cedarwood.test"
+      },
+      "internal": false,
+      "body": "Is anyone looking at this? It must be broken on your side.",
+      "body_html": "<div dir=\"ltr\"><p>Is anyone looking at this? It must be broken on your side.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 12,
+    "created_at": "2026-10-18T12:31:14.852Z",
+    "updated_at": "2026-10-19T12:51:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.757Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-18T12:31:14.852Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-10-18T12:31:14.852Z",
+      "actor": "system",
+      "to": "Accounts"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-10-18T12:31:14.852Z",
+      "actor": "system",
+      "to": "Maya Ghanem"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-10-18T13:11:14.852Z",
+      "actor": "agent"
+    }
+  ]
+}

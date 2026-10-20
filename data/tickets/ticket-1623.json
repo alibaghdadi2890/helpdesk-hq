@@ -1,0 +1,233 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "02eab7bb-934b-4c18-bcde-4bda42a5087a",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/02eab7bb-934b-4c18-bcde-4bda42a5087a",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1623",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1623,
+  "subject": "How do I change our payment card?",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+    "name": "Omar Fares",
+    "email": "omar@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/9e1be4b2-8d1f-4e69-995b-47dbfe6841b5.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "c99fa8ee-1b34-4d43-be56-868bd5c4704e",
+    "code": "CUS-10254",
+    "legacy_number": 10254,
+    "name": "Lea Saliba",
+    "email": "lea.saliba@example.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2025-11-19T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/c99fa8ee-1b34-4d43-be56-868bd5c4704e.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_c99fa8ee",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-09-07T08:00:00.000Z",
+    "resolution_due_at": "2026-09-08T14:00:00.000Z",
+    "first_response_at": "2026-09-07T07:12:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "d5a04480-01ba-449c-9685-859752013842",
+      "created_at": "2026-09-06T05:43:34.578Z",
+      "author": {
+        "type": "customer",
+        "id": "c99fa8ee-1b34-4d43-be56-868bd5c4704e",
+        "name": "Lea Saliba",
+        "email": "lea.saliba@example.test"
+      },
+      "internal": false,
+      "body": "Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?",
+      "body_html": "<div dir=\"ltr\"><p>Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "2ecb7f16-7ed6-48d0-9c64-ed3355a593e4",
+      "created_at": "2026-09-07T07:12:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Hi Lea, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Lea, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "012a9be8-7afc-47e8-8e94-838cd8b7f0a5",
+      "created_at": "2026-09-08T00:12:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "c99fa8ee-1b34-4d43-be56-868bd5c4704e",
+        "name": "Lea Saliba",
+        "email": "lea.saliba@example.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "87a0e99d-0337-40e5-a84d-40174d705ffa",
+      "created_at": "2026-09-08T01:12:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Thanks for your patience, Lea. I've passed this to our technical team and will update you as soon as I hear back.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks for your patience, Lea. I've passed this to our technical team and will update you as soon as I hear back.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "a5c6c8be-148b-46d1-94af-951366fca476",
+      "created_at": "2026-09-08T15:12:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "c99fa8ee-1b34-4d43-be56-868bd5c4704e",
+        "name": "Lea Saliba",
+        "email": "lea.saliba@example.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "7767f8c9-53e6-497f-bc6b-93dec380ea6c",
+      "created_at": "2026-09-08T18:12:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Hi Lea, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Lea, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-09-06T05:43:34.578Z",
+    "updated_at": "2026-09-08T19:12:00.000Z",
+    "solved_at": "2026-09-08T19:12:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.870Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-06T05:43:34.578Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-06T05:43:34.578Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-06T05:43:34.578Z",
+      "actor": "system",
+      "to": "Omar Fares"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-07T07:12:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-08T19:12:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

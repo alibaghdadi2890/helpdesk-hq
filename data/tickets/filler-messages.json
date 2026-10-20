@@ -1,0 +1,1002 @@
+[
+ {
+  "id": "F001",
+  "author": "agent",
+  "body": "Thanks for your patience. I've added these notes to the ticket so the whole team can see them. I'm checking this with a colleague on the technical team. Best regards."
+ },
+ {
+  "id": "F002",
+  "author": "agent",
+  "body": "Thanks for checking that. No problem at all, take your time. Speak soon."
+ },
+ {
+  "id": "F003",
+  "author": "agent",
+  "body": "Got it, thank you. I'm checking this with a colleague on the technical team. I'll keep this ticket open while we look into it. I'll be in touch."
+ },
+ {
+  "id": "F004",
+  "author": "customer",
+  "body": "Thanks for getting back to me. I've attached nothing new, the situation is the same as before. Our accountant asked me to keep this ticket open for now. We tried again this morning after clearing the browser cache. Kind regards."
+ },
+ {
+  "id": "F005",
+  "author": "customer",
+  "body": "Thanks for getting back to me. We tried again this morning after clearing the browser cache. Kind regards."
+ },
+ {
+  "id": "F006",
+  "author": "customer",
+  "body": "Hi again, It happens on both Chrome and Firefox. I've attached nothing new, the situation is the same as before. Kind regards."
+ },
+ {
+  "id": "F007",
+  "author": "agent",
+  "body": "Thanks for your patience. I've noted that your manager should be copied on replies. Best regards."
+ },
+ {
+  "id": "F008",
+  "author": "customer",
+  "body": "Hello team, We restarted the laptop and it behaves the same way. Cheers."
+ },
+ {
+  "id": "F009",
+  "author": "agent",
+  "body": "Thanks for the update. Could you confirm which browser version you're using? Best regards."
+ },
+ {
+  "id": "F010",
+  "author": "agent",
+  "body": "Thanks for the details. I've noted that your manager should be copied on replies. Could you confirm which browser version you're using? Have a good day."
+ },
+ {
+  "id": "F011",
+  "author": "agent",
+  "body": "Thanks for your patience. I'm checking this with a colleague on the technical team. Best regards."
+ },
+ {
+  "id": "F012",
+  "author": "agent",
+  "body": "Got it, thank you. Could you confirm which browser version you're using? Nothing on our status page suggests a wider problem right now. Best regards."
+ },
+ {
+  "id": "F013",
+  "author": "customer",
+  "body": "Just following up on this. Could you keep my manager in copy from now on? We're a team of twelve agents, most of them in the Beirut office. I'm not sure if it's related, but our internet was slow yesterday. Best regards."
+ },
+ {
+  "id": "F014",
+  "author": "customer",
+  "body": "Morning, Our IT team says nothing changed on our network. Kind regards."
+ },
+ {
+  "id": "F015",
+  "author": "customer",
+  "body": "Hello team, We can do a screen share if that helps. No rush on this one, but I wanted it on record. Kind regards."
+ },
+ {
+  "id": "F016",
+  "author": "customer",
+  "body": "Just following up on this. We use the web app mostly, the mobile app only on weekends. Appreciate the help."
+ },
+ {
+  "id": "F017",
+  "author": "customer",
+  "body": "Just following up on this. This started around the time we added two new agents. Cheers."
+ },
+ {
+  "id": "F018",
+  "author": "customer",
+  "body": "One more thing: I'll be out of the office on Friday afternoon. We can do a screen share if that helps. Thanks."
+ },
+ {
+  "id": "F019",
+  "author": "customer",
+  "body": "Hello team, I've attached nothing new, the situation is the same as before. Appreciate the help."
+ },
+ {
+  "id": "F020",
+  "author": "agent",
+  "body": "Thanks for the details. I'll keep this ticket open while we look into it. Let me know if anything changes."
+ },
+ {
+  "id": "F021",
+  "author": "agent",
+  "body": "Got it, thank you. Could you tell me roughly what time it last happened? Let me know if anything changes."
+ },
+ {
+  "id": "F022",
+  "author": "agent",
+  "body": "Thanks for the details. That's helpful, it narrows things down. Best regards."
+ },
+ {
+  "id": "F023",
+  "author": "agent",
+  "body": "Got it, thank you. That's helpful, it narrows things down. I'll keep this ticket open while we look into it. Speak soon."
+ },
+ {
+  "id": "F024",
+  "author": "agent",
+  "body": "Thanks for your patience. I'll keep this ticket open while we look into it. I'll be in touch."
+ },
+ {
+  "id": "F025",
+  "author": "agent",
+  "body": "Thanks for checking that. Nothing on our status page suggests a wider problem right now. Have a good day."
+ },
+ {
+  "id": "F026",
+  "author": "agent",
+  "body": "Got it, thank you. I've noted that your manager should be copied on replies. I've passed this on and will update you as soon as I hear back. Speak soon."
+ },
+ {
+  "id": "F027",
+  "author": "customer",
+  "body": "Thanks for getting back to me. We restarted the laptop and it behaves the same way. I'll be out of the office on Friday afternoon. Appreciate the help."
+ },
+ {
+  "id": "F028",
+  "author": "agent",
+  "body": "Thanks for the update. That's helpful, it narrows things down. I've added these notes to the ticket so the whole team can see them. Speak soon."
+ },
+ {
+  "id": "F029",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you tell me roughly what time it last happened? I'm checking this with a colleague on the technical team. Have a good day."
+ },
+ {
+  "id": "F030",
+  "author": "customer",
+  "body": "Just following up on this. It happens on both Chrome and Firefox. Kind regards."
+ },
+ {
+  "id": "F031",
+  "author": "agent",
+  "body": "Thanks for the details. I'm checking this with a colleague on the technical team. Speak soon."
+ },
+ {
+  "id": "F032",
+  "author": "customer",
+  "body": "Quick update from our side. We use the web app mostly, the mobile app only on weekends. We can do a screen share if that helps. The issue seems less frequent today. Appreciate the help."
+ },
+ {
+  "id": "F033",
+  "author": "agent",
+  "body": "Got it, thank you. Could you confirm which browser version you're using? I've noted that your manager should be copied on replies. Have a good day."
+ },
+ {
+  "id": "F034",
+  "author": "agent",
+  "body": "Thanks for the update. Nothing on our status page suggests a wider problem right now. Could you confirm which browser version you're using? Speak soon."
+ },
+ {
+  "id": "F035",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you tell me roughly what time it last happened? No problem at all, take your time. I'll be in touch."
+ },
+ {
+  "id": "F036",
+  "author": "customer",
+  "body": "Hi again, Our IT team says nothing changed on our network. We use the web app mostly, the mobile app only on weekends. We can do a screen share if that helps. Best regards."
+ },
+ {
+  "id": "F037",
+  "author": "agent",
+  "body": "Thanks for your patience. I'll keep this ticket open while we look into it. I've noted that your manager should be copied on replies. Speak soon."
+ },
+ {
+  "id": "F038",
+  "author": "customer",
+  "body": "Sorry for the slow reply. The issue seems less frequent today. Appreciate the help."
+ },
+ {
+  "id": "F039",
+  "author": "agent",
+  "body": "Thanks for the update. Nothing on our status page suggests a wider problem right now. Let me know if anything changes."
+ },
+ {
+  "id": "F040",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you confirm which browser version you're using? I've passed this on and will update you as soon as I hear back. Have a good day."
+ },
+ {
+  "id": "F041",
+  "author": "agent",
+  "body": "Thanks for the update. Could you confirm which browser version you're using? Speak soon."
+ },
+ {
+  "id": "F042",
+  "author": "agent",
+  "body": "Got it, thank you. Could you confirm which browser version you're using? Have a good day."
+ },
+ {
+  "id": "F043",
+  "author": "customer",
+  "body": "Just following up on this. I've attached nothing new, the situation is the same as before. I'll be out of the office on Friday afternoon. The account owner is on holiday until next week. Appreciate the help."
+ },
+ {
+  "id": "F044",
+  "author": "customer",
+  "body": "Morning, I'm not sure if it's related, but our internet was slow yesterday. Our IT team says nothing changed on our network. I'll be out of the office on Friday afternoon. Appreciate the help."
+ },
+ {
+  "id": "F045",
+  "author": "agent",
+  "body": "Thanks for the update. Could you tell me roughly what time it last happened? Speak soon."
+ },
+ {
+  "id": "F046",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you tell me roughly what time it last happened? Could you confirm which browser version you're using? Have a good day."
+ },
+ {
+  "id": "F047",
+  "author": "agent",
+  "body": "Thanks for checking that. I've added these notes to the ticket so the whole team can see them. I'll be in touch."
+ },
+ {
+  "id": "F048",
+  "author": "customer",
+  "body": "Just following up on this. It happens on both Chrome and Firefox. Could you keep my manager in copy from now on? The account owner is on holiday until next week. Best regards."
+ },
+ {
+  "id": "F049",
+  "author": "agent",
+  "body": "Thanks for your patience. No problem at all, take your time. I'll keep this ticket open while we look into it. Best regards."
+ },
+ {
+  "id": "F050",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you tell me roughly what time it last happened? I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F051",
+  "author": "customer",
+  "body": "Morning, It happens on both Chrome and Firefox. We restarted the laptop and it behaves the same way. I checked with my colleague and she sees the same screen. Appreciate the help."
+ },
+ {
+  "id": "F052",
+  "author": "customer",
+  "body": "Thanks for getting back to me. We're a team of twelve agents, most of them in the Beirut office. Best regards."
+ },
+ {
+  "id": "F053",
+  "author": "agent",
+  "body": "Thanks for the update. I've passed this on and will update you as soon as I hear back. Best regards."
+ },
+ {
+  "id": "F054",
+  "author": "agent",
+  "body": "Got it, thank you. No problem at all, take your time. I'll be in touch."
+ },
+ {
+  "id": "F055",
+  "author": "agent",
+  "body": "Thanks for the details. I'm checking this with a colleague on the technical team. Best regards."
+ },
+ {
+  "id": "F056",
+  "author": "agent",
+  "body": "Thanks for the update. Could you confirm which browser version you're using? Have a good day."
+ },
+ {
+  "id": "F057",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We use the web app mostly, the mobile app only on weekends. We have a team meeting tomorrow where this will come up. No rush on this one, but I wanted it on record. Kind regards."
+ },
+ {
+  "id": "F058",
+  "author": "customer",
+  "body": "Hi again, The account owner is on holiday until next week. We have a team meeting tomorrow where this will come up. It happens on both Chrome and Firefox. Appreciate the help."
+ },
+ {
+  "id": "F059",
+  "author": "agent",
+  "body": "Got it, thank you. I'm checking this with a colleague on the technical team. I'll keep this ticket open while we look into it. Let me know if anything changes."
+ },
+ {
+  "id": "F060",
+  "author": "agent",
+  "body": "Thanks for the details. Could you tell me roughly what time it last happened? Have a good day."
+ },
+ {
+  "id": "F061",
+  "author": "agent",
+  "body": "Thanks for your patience. I'll keep this ticket open while we look into it. I'm checking this with a colleague on the technical team. Let me know if anything changes."
+ },
+ {
+  "id": "F062",
+  "author": "customer",
+  "body": "Quick update from our side. Our accountant asked me to keep this ticket open for now. We're a team of twelve agents, most of them in the Beirut office. Could you keep my manager in copy from now on? Kind regards."
+ },
+ {
+  "id": "F063",
+  "author": "agent",
+  "body": "Got it, thank you. I've passed this on and will update you as soon as I hear back. Have a good day."
+ },
+ {
+  "id": "F064",
+  "author": "agent",
+  "body": "Thanks for the details. I've passed this on and will update you as soon as I hear back. Best regards."
+ },
+ {
+  "id": "F065",
+  "author": "agent",
+  "body": "Thanks for the update. I've passed this on and will update you as soon as I hear back. No problem at all, take your time. Best regards."
+ },
+ {
+  "id": "F066",
+  "author": "agent",
+  "body": "Thanks for the update. I'll keep this ticket open while we look into it. I'll be in touch."
+ },
+ {
+  "id": "F067",
+  "author": "customer",
+  "body": "Morning, We use the web app mostly, the mobile app only on weekends. I'll be out of the office on Friday afternoon. It happens on both Chrome and Firefox. Kind regards."
+ },
+ {
+  "id": "F068",
+  "author": "customer",
+  "body": "One more thing: I'm not sure if it's related, but our internet was slow yesterday. Our IT team says nothing changed on our network. We use the web app mostly, the mobile app only on weekends. Thanks."
+ },
+ {
+  "id": "F069",
+  "author": "customer",
+  "body": "Quick update from our side. Our IT team says nothing changed on our network. We use the web app mostly, the mobile app only on weekends. Thanks."
+ },
+ {
+  "id": "F070",
+  "author": "customer",
+  "body": "Hi again, Our accountant asked me to keep this ticket open for now. Thanks."
+ },
+ {
+  "id": "F071",
+  "author": "agent",
+  "body": "Thanks for the update. I've added these notes to the ticket so the whole team can see them. I've passed this on and will update you as soon as I hear back. Best regards."
+ },
+ {
+  "id": "F072",
+  "author": "agent",
+  "body": "Thanks for the details. I've added these notes to the ticket so the whole team can see them. Best regards."
+ },
+ {
+  "id": "F073",
+  "author": "customer",
+  "body": "Just following up on this. We use the web app mostly, the mobile app only on weekends. Thanks."
+ },
+ {
+  "id": "F074",
+  "author": "agent",
+  "body": "Thanks for the details. No problem at all, take your time. I'll keep this ticket open while we look into it. Have a good day."
+ },
+ {
+  "id": "F075",
+  "author": "agent",
+  "body": "Thanks for your patience. I've passed this on and will update you as soon as I hear back. I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F076",
+  "author": "agent",
+  "body": "Thanks for the update. No problem at all, take your time. Let me know if anything changes."
+ },
+ {
+  "id": "F077",
+  "author": "agent",
+  "body": "Got it, thank you. That's helpful, it narrows things down. Let me know if anything changes."
+ },
+ {
+  "id": "F078",
+  "author": "agent",
+  "body": "Got it, thank you. I'll keep this ticket open while we look into it. I've noted that your manager should be copied on replies. Have a good day."
+ },
+ {
+  "id": "F079",
+  "author": "agent",
+  "body": "Thanks for your patience. I've passed this on and will update you as soon as I hear back. I've added these notes to the ticket so the whole team can see them. Speak soon."
+ },
+ {
+  "id": "F080",
+  "author": "agent",
+  "body": "Thanks for the details. Could you tell me roughly what time it last happened? I've added these notes to the ticket so the whole team can see them. I'll be in touch."
+ },
+ {
+  "id": "F081",
+  "author": "customer",
+  "body": "Morning, This started around the time we added two new agents. Our accountant asked me to keep this ticket open for now. We restarted the laptop and it behaves the same way. Thanks."
+ },
+ {
+  "id": "F082",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you confirm which browser version you're using? I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F083",
+  "author": "agent",
+  "body": "Thanks for the details. I'll keep this ticket open while we look into it. I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F084",
+  "author": "agent",
+  "body": "Thanks for your patience. I've passed this on and will update you as soon as I hear back. Let me know if anything changes."
+ },
+ {
+  "id": "F085",
+  "author": "agent",
+  "body": "Thanks for the details. I'll keep this ticket open while we look into it. Best regards."
+ },
+ {
+  "id": "F086",
+  "author": "customer",
+  "body": "Just following up on this. Our IT team says nothing changed on our network. It happens on both Chrome and Firefox. Appreciate the help."
+ },
+ {
+  "id": "F087",
+  "author": "customer",
+  "body": "Morning, This started around the time we added two new agents. Speak soon."
+ },
+ {
+  "id": "F088",
+  "author": "customer",
+  "body": "Just following up on this. The issue seems less frequent today. It happens on both Chrome and Firefox. I'll be out of the office on Friday afternoon. Speak soon."
+ },
+ {
+  "id": "F089",
+  "author": "customer",
+  "body": "One more thing: This started around the time we added two new agents. Cheers."
+ },
+ {
+  "id": "F090",
+  "author": "customer",
+  "body": "Quick update from our side. The issue seems less frequent today. Cheers."
+ },
+ {
+  "id": "F091",
+  "author": "agent",
+  "body": "Thanks for checking that. No problem at all, take your time. Best regards."
+ },
+ {
+  "id": "F092",
+  "author": "customer",
+  "body": "Thanks for getting back to me. Our accountant asked me to keep this ticket open for now. Our IT team says nothing changed on our network. I checked with my colleague and she sees the same screen. Thanks."
+ },
+ {
+  "id": "F093",
+  "author": "agent",
+  "body": "Thanks for the details. That's helpful, it narrows things down. Let me know if anything changes."
+ },
+ {
+  "id": "F094",
+  "author": "customer",
+  "body": "Thanks for getting back to me. We restarted the laptop and it behaves the same way. Our accountant asked me to keep this ticket open for now. No rush on this one, but I wanted it on record. Speak soon."
+ },
+ {
+  "id": "F095",
+  "author": "agent",
+  "body": "Thanks for the update. No problem at all, take your time. I'll be in touch."
+ },
+ {
+  "id": "F096",
+  "author": "customer",
+  "body": "One more thing: Our IT team says nothing changed on our network. We use the web app mostly, the mobile app only on weekends. Best regards."
+ },
+ {
+  "id": "F097",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We have a team meeting tomorrow where this will come up. Appreciate the help."
+ },
+ {
+  "id": "F098",
+  "author": "customer",
+  "body": "Just following up on this. This started around the time we added two new agents. We tried again this morning after clearing the browser cache. Kind regards."
+ },
+ {
+  "id": "F099",
+  "author": "customer",
+  "body": "Sorry for the slow reply. It happens on both Chrome and Firefox. Speak soon."
+ },
+ {
+  "id": "F100",
+  "author": "agent",
+  "body": "Thanks for the details. I've added these notes to the ticket so the whole team can see them. Let me know if anything changes."
+ },
+ {
+  "id": "F101",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you confirm which browser version you're using? I've noted that your manager should be copied on replies. Let me know if anything changes."
+ },
+ {
+  "id": "F102",
+  "author": "customer",
+  "body": "Sorry for the slow reply. Our IT team says nothing changed on our network. No rush on this one, but I wanted it on record. Thanks."
+ },
+ {
+  "id": "F103",
+  "author": "agent",
+  "body": "Thanks for the update. Nothing on our status page suggests a wider problem right now. That's helpful, it narrows things down. Speak soon."
+ },
+ {
+  "id": "F104",
+  "author": "customer",
+  "body": "Sorry for the slow reply. Our IT team says nothing changed on our network. Best regards."
+ },
+ {
+  "id": "F105",
+  "author": "customer",
+  "body": "Hi again, It happens on both Chrome and Firefox. The issue seems less frequent today. Speak soon."
+ },
+ {
+  "id": "F106",
+  "author": "customer",
+  "body": "Hello team, No rush on this one, but I wanted it on record. Appreciate the help."
+ },
+ {
+  "id": "F107",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you confirm which browser version you're using? Let me know if anything changes."
+ },
+ {
+  "id": "F108",
+  "author": "agent",
+  "body": "Thanks for your patience. I've passed this on and will update you as soon as I hear back. That's helpful, it narrows things down. Have a good day."
+ },
+ {
+  "id": "F109",
+  "author": "agent",
+  "body": "Thanks for the details. I've passed this on and will update you as soon as I hear back. Have a good day."
+ },
+ {
+  "id": "F110",
+  "author": "customer",
+  "body": "Just following up on this. I checked with my colleague and she sees the same screen. Cheers."
+ },
+ {
+  "id": "F111",
+  "author": "customer",
+  "body": "Just following up on this. Could you keep my manager in copy from now on? We use the web app mostly, the mobile app only on weekends. Thanks."
+ },
+ {
+  "id": "F112",
+  "author": "agent",
+  "body": "Thanks for the update. Could you tell me roughly what time it last happened? I'll keep this ticket open while we look into it. Have a good day."
+ },
+ {
+  "id": "F113",
+  "author": "agent",
+  "body": "Thanks for the details. I've passed this on and will update you as soon as I hear back. Let me know if anything changes."
+ },
+ {
+  "id": "F114",
+  "author": "customer",
+  "body": "Morning, We restarted the laptop and it behaves the same way. The account owner is on holiday until next week. Our IT team says nothing changed on our network. Thanks."
+ },
+ {
+  "id": "F115",
+  "author": "customer",
+  "body": "Morning, It happens on both Chrome and Firefox. This started around the time we added two new agents. Appreciate the help."
+ },
+ {
+  "id": "F116",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you tell me roughly what time it last happened? Let me know if anything changes."
+ },
+ {
+  "id": "F117",
+  "author": "agent",
+  "body": "Thanks for the details. Nothing on our status page suggests a wider problem right now. I've noted that your manager should be copied on replies. Let me know if anything changes."
+ },
+ {
+  "id": "F118",
+  "author": "customer",
+  "body": "Hi again, We restarted the laptop and it behaves the same way. I'll be out of the office on Friday afternoon. Thanks."
+ },
+ {
+  "id": "F119",
+  "author": "agent",
+  "body": "Thanks for your patience. I'll keep this ticket open while we look into it. Best regards."
+ },
+ {
+  "id": "F120",
+  "author": "customer",
+  "body": "One more thing: Our accountant asked me to keep this ticket open for now. We have a team meeting tomorrow where this will come up. I'm not sure if it's related, but our internet was slow yesterday. Appreciate the help."
+ },
+ {
+  "id": "F121",
+  "author": "agent",
+  "body": "Thanks for checking that. I'll keep this ticket open while we look into it. I'll be in touch."
+ },
+ {
+  "id": "F122",
+  "author": "agent",
+  "body": "Thanks for checking that. I've passed this on and will update you as soon as I hear back. Speak soon."
+ },
+ {
+  "id": "F123",
+  "author": "agent",
+  "body": "Thanks for checking that. I've added these notes to the ticket so the whole team can see them. Let me know if anything changes."
+ },
+ {
+  "id": "F124",
+  "author": "agent",
+  "body": "Thanks for checking that. That's helpful, it narrows things down. Have a good day."
+ },
+ {
+  "id": "F125",
+  "author": "agent",
+  "body": "Thanks for the update. Nothing on our status page suggests a wider problem right now. I've passed this on and will update you as soon as I hear back. Speak soon."
+ },
+ {
+  "id": "F126",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We use the web app mostly, the mobile app only on weekends. Best regards."
+ },
+ {
+  "id": "F127",
+  "author": "agent",
+  "body": "Got it, thank you. Nothing on our status page suggests a wider problem right now. I've added these notes to the ticket so the whole team can see them. Speak soon."
+ },
+ {
+  "id": "F128",
+  "author": "agent",
+  "body": "Got it, thank you. I've added these notes to the ticket so the whole team can see them. I'm checking this with a colleague on the technical team. Let me know if anything changes."
+ },
+ {
+  "id": "F129",
+  "author": "customer",
+  "body": "One more thing: Our accountant asked me to keep this ticket open for now. I've attached nothing new, the situation is the same as before. Best regards."
+ },
+ {
+  "id": "F130",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you confirm which browser version you're using? I'll be in touch."
+ },
+ {
+  "id": "F131",
+  "author": "customer",
+  "body": "Thanks for getting back to me. It happens on both Chrome and Firefox. Best regards."
+ },
+ {
+  "id": "F132",
+  "author": "customer",
+  "body": "Thanks for getting back to me. This started around the time we added two new agents. It happens on both Chrome and Firefox. We use the web app mostly, the mobile app only on weekends. Kind regards."
+ },
+ {
+  "id": "F133",
+  "author": "customer",
+  "body": "Just following up on this. Our IT team says nothing changed on our network. Speak soon."
+ },
+ {
+  "id": "F134",
+  "author": "agent",
+  "body": "Thanks for checking that. I've added these notes to the ticket so the whole team can see them. Best regards."
+ },
+ {
+  "id": "F135",
+  "author": "agent",
+  "body": "Got it, thank you. I've passed this on and will update you as soon as I hear back. I'll keep this ticket open while we look into it. Let me know if anything changes."
+ },
+ {
+  "id": "F136",
+  "author": "customer",
+  "body": "Hi again, I checked with my colleague and she sees the same screen. Best regards."
+ },
+ {
+  "id": "F137",
+  "author": "agent",
+  "body": "Got it, thank you. Nothing on our status page suggests a wider problem right now. Speak soon."
+ },
+ {
+  "id": "F138",
+  "author": "customer",
+  "body": "Hello team, No rush on this one, but I wanted it on record. Thanks."
+ },
+ {
+  "id": "F139",
+  "author": "customer",
+  "body": "Morning, I'll be out of the office on Friday afternoon. The account owner is on holiday until next week. Thanks."
+ },
+ {
+  "id": "F140",
+  "author": "customer",
+  "body": "Just following up on this. No rush on this one, but I wanted it on record. Best regards."
+ },
+ {
+  "id": "F141",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you confirm which browser version you're using? Speak soon."
+ },
+ {
+  "id": "F142",
+  "author": "agent",
+  "body": "Thanks for the details. I've noted that your manager should be copied on replies. Let me know if anything changes."
+ },
+ {
+  "id": "F143",
+  "author": "customer",
+  "body": "Sorry for the slow reply. Could you keep my manager in copy from now on? We tried again this morning after clearing the browser cache. Kind regards."
+ },
+ {
+  "id": "F144",
+  "author": "agent",
+  "body": "Got it, thank you. I'll keep this ticket open while we look into it. I'll be in touch."
+ },
+ {
+  "id": "F145",
+  "author": "customer",
+  "body": "Quick update from our side. We tried again this morning after clearing the browser cache. We restarted the laptop and it behaves the same way. Best regards."
+ },
+ {
+  "id": "F146",
+  "author": "agent",
+  "body": "Thanks for your patience. I've added these notes to the ticket so the whole team can see them. Nothing on our status page suggests a wider problem right now. Let me know if anything changes."
+ },
+ {
+  "id": "F147",
+  "author": "customer",
+  "body": "Hello team, We're a team of twelve agents, most of them in the Beirut office. I've attached nothing new, the situation is the same as before. Thanks."
+ },
+ {
+  "id": "F148",
+  "author": "agent",
+  "body": "Thanks for the update. That's helpful, it narrows things down. I'm checking this with a colleague on the technical team. Best regards."
+ },
+ {
+  "id": "F149",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We can do a screen share if that helps. This started around the time we added two new agents. Appreciate the help."
+ },
+ {
+  "id": "F150",
+  "author": "agent",
+  "body": "Got it, thank you. I've passed this on and will update you as soon as I hear back. Best regards."
+ },
+ {
+  "id": "F151",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We can do a screen share if that helps. No rush on this one, but I wanted it on record. Thanks."
+ },
+ {
+  "id": "F152",
+  "author": "customer",
+  "body": "Sorry for the slow reply. I'll be out of the office on Friday afternoon. We tried again this morning after clearing the browser cache. We restarted the laptop and it behaves the same way. Thanks."
+ },
+ {
+  "id": "F153",
+  "author": "agent",
+  "body": "Thanks for the update. I'll keep this ticket open while we look into it. I'm checking this with a colleague on the technical team. Best regards."
+ },
+ {
+  "id": "F154",
+  "author": "agent",
+  "body": "Thanks for the details. I've noted that your manager should be copied on replies. I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F155",
+  "author": "customer",
+  "body": "Hello team, This started around the time we added two new agents. I checked with my colleague and she sees the same screen. Cheers."
+ },
+ {
+  "id": "F156",
+  "author": "customer",
+  "body": "Just following up on this. Our accountant asked me to keep this ticket open for now. Thanks."
+ },
+ {
+  "id": "F157",
+  "author": "agent",
+  "body": "Got it, thank you. Nothing on our status page suggests a wider problem right now. That's helpful, it narrows things down. Let me know if anything changes."
+ },
+ {
+  "id": "F158",
+  "author": "agent",
+  "body": "Got it, thank you. I've added these notes to the ticket so the whole team can see them. Have a good day."
+ },
+ {
+  "id": "F159",
+  "author": "customer",
+  "body": "Quick update from our side. Our accountant asked me to keep this ticket open for now. I'm not sure if it's related, but our internet was slow yesterday. The issue seems less frequent today. Appreciate the help."
+ },
+ {
+  "id": "F160",
+  "author": "agent",
+  "body": "Thanks for your patience. That's helpful, it narrows things down. I'll be in touch."
+ },
+ {
+  "id": "F161",
+  "author": "customer",
+  "body": "One more thing: We restarted the laptop and it behaves the same way. I'm not sure if it's related, but our internet was slow yesterday. We're a team of twelve agents, most of them in the Beirut office. Appreciate the help."
+ },
+ {
+  "id": "F162",
+  "author": "customer",
+  "body": "Just following up on this. Our IT team says nothing changed on our network. The account owner is on holiday until next week. Thanks."
+ },
+ {
+  "id": "F163",
+  "author": "agent",
+  "body": "Got it, thank you. I'll keep this ticket open while we look into it. Speak soon."
+ },
+ {
+  "id": "F164",
+  "author": "agent",
+  "body": "Thanks for checking that. No problem at all, take your time. I'll be in touch."
+ },
+ {
+  "id": "F165",
+  "author": "customer",
+  "body": "Hi again, We use the web app mostly, the mobile app only on weekends. We restarted the laptop and it behaves the same way. Speak soon."
+ },
+ {
+  "id": "F166",
+  "author": "agent",
+  "body": "Thanks for the details. Could you confirm which browser version you're using? Speak soon."
+ },
+ {
+  "id": "F167",
+  "author": "agent",
+  "body": "Thanks for your patience. Nothing on our status page suggests a wider problem right now. Best regards."
+ },
+ {
+  "id": "F168",
+  "author": "agent",
+  "body": "Thanks for the update. Nothing on our status page suggests a wider problem right now. I'll keep this ticket open while we look into it. Best regards."
+ },
+ {
+  "id": "F169",
+  "author": "agent",
+  "body": "Thanks for the update. I've added these notes to the ticket so the whole team can see them. I'm checking this with a colleague on the technical team. I'll be in touch."
+ },
+ {
+  "id": "F170",
+  "author": "agent",
+  "body": "Thanks for the update. I've noted that your manager should be copied on replies. Best regards."
+ },
+ {
+  "id": "F171",
+  "author": "agent",
+  "body": "Thanks for the update. No problem at all, take your time. Could you tell me roughly what time it last happened? Let me know if anything changes."
+ },
+ {
+  "id": "F172",
+  "author": "customer",
+  "body": "Thanks for getting back to me. We can do a screen share if that helps. Best regards."
+ },
+ {
+  "id": "F173",
+  "author": "agent",
+  "body": "Thanks for the details. I've added these notes to the ticket so the whole team can see them. Speak soon."
+ },
+ {
+  "id": "F174",
+  "author": "customer",
+  "body": "Thanks for getting back to me. The account owner is on holiday until next week. I checked with my colleague and she sees the same screen. I'm not sure if it's related, but our internet was slow yesterday. Appreciate the help."
+ },
+ {
+  "id": "F175",
+  "author": "customer",
+  "body": "Quick update from our side. This started around the time we added two new agents. Our IT team says nothing changed on our network. The account owner is on holiday until next week. Thanks."
+ },
+ {
+  "id": "F176",
+  "author": "customer",
+  "body": "One more thing: Could you keep my manager in copy from now on? Thanks."
+ },
+ {
+  "id": "F177",
+  "author": "customer",
+  "body": "Quick update from our side. We restarted the laptop and it behaves the same way. Our IT team says nothing changed on our network. We're a team of twelve agents, most of them in the Beirut office. Appreciate the help."
+ },
+ {
+  "id": "F178",
+  "author": "customer",
+  "body": "Morning, This started around the time we added two new agents. Could you keep my manager in copy from now on? Thanks."
+ },
+ {
+  "id": "F179",
+  "author": "agent",
+  "body": "Thanks for checking that. That's helpful, it narrows things down. I've noted that your manager should be copied on replies. I'll be in touch."
+ },
+ {
+  "id": "F180",
+  "author": "customer",
+  "body": "Hello team, The account owner is on holiday until next week. I'll be out of the office on Friday afternoon. The issue seems less frequent today. Best regards."
+ },
+ {
+  "id": "F181",
+  "author": "customer",
+  "body": "Morning, Could you keep my manager in copy from now on? Thanks."
+ },
+ {
+  "id": "F182",
+  "author": "customer",
+  "body": "Morning, We can do a screen share if that helps. We have a team meeting tomorrow where this will come up. We're a team of twelve agents, most of them in the Beirut office. Best regards."
+ },
+ {
+  "id": "F183",
+  "author": "agent",
+  "body": "Thanks for checking that. That's helpful, it narrows things down. I'll be in touch."
+ },
+ {
+  "id": "F184",
+  "author": "customer",
+  "body": "Hello team, The issue seems less frequent today. We're a team of twelve agents, most of them in the Beirut office. It happens on both Chrome and Firefox. Speak soon."
+ },
+ {
+  "id": "F185",
+  "author": "agent",
+  "body": "Thanks for checking that. I'm checking this with a colleague on the technical team. I'll be in touch."
+ },
+ {
+  "id": "F186",
+  "author": "agent",
+  "body": "Thanks for your patience. Could you tell me roughly what time it last happened? I've added these notes to the ticket so the whole team can see them. Let me know if anything changes."
+ },
+ {
+  "id": "F187",
+  "author": "agent",
+  "body": "Thanks for checking that. I'm checking this with a colleague on the technical team. Could you tell me roughly what time it last happened? Speak soon."
+ },
+ {
+  "id": "F188",
+  "author": "customer",
+  "body": "Sorry for the slow reply. We're a team of twelve agents, most of them in the Beirut office. The account owner is on holiday until next week. Thanks."
+ },
+ {
+  "id": "F189",
+  "author": "agent",
+  "body": "Thanks for your patience. I've added these notes to the ticket so the whole team can see them. Best regards."
+ },
+ {
+  "id": "F190",
+  "author": "customer",
+  "body": "Thanks for getting back to me. I'm not sure if it's related, but our internet was slow yesterday. I've attached nothing new, the situation is the same as before. I'll be out of the office on Friday afternoon. Kind regards."
+ },
+ {
+  "id": "F191",
+  "author": "agent",
+  "body": "Thanks for the details. Nothing on our status page suggests a wider problem right now. I'll keep this ticket open while we look into it. Let me know if anything changes."
+ },
+ {
+  "id": "F192",
+  "author": "agent",
+  "body": "Thanks for the details. No problem at all, take your time. Could you confirm which browser version you're using? Speak soon."
+ },
+ {
+  "id": "F193",
+  "author": "agent",
+  "body": "Thanks for checking that. Could you confirm which browser version you're using? I'll keep this ticket open while we look into it. Let me know if anything changes."
+ },
+ {
+  "id": "F194",
+  "author": "customer",
+  "body": "One more thing: No rush on this one, but I wanted it on record. Appreciate the help."
+ },
+ {
+  "id": "F195",
+  "author": "agent",
+  "body": "Thanks for your patience. That's helpful, it narrows things down. I've passed this on and will update you as soon as I hear back. I'll be in touch."
+ },
+ {
+  "id": "F196",
+  "author": "customer",
+  "body": "Thanks for getting back to me. It happens on both Chrome and Firefox. Thanks."
+ },
+ {
+  "id": "F197",
+  "author": "customer",
+  "body": "Hello team, The issue seems less frequent today. Our IT team says nothing changed on our network. We tried again this morning after clearing the browser cache. Kind regards."
+ },
+ {
+  "id": "F198",
+  "author": "customer",
+  "body": "Quick update from our side. Our IT team says nothing changed on our network. Kind regards."
+ },
+ {
+  "id": "F199",
+  "author": "customer",
+  "body": "Just following up on this. It happens on both Chrome and Firefox. Appreciate the help."
+ },
+ {
+  "id": "F200",
+  "author": "agent",
+  "body": "Thanks for your patience. I'm checking this with a colleague on the technical team. Have a good day."
+ }
+]

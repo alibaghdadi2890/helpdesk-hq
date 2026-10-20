@@ -1,0 +1,188 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "164e8e07-2ba2-436e-ade4-89c57e3a9cdc",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/164e8e07-2ba2-436e-ade4-89c57e3a9cdc",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1562",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1562,
+  "subject": "Assignment rule sends tickets to the wrong team",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "2420479b-cc3a-4777-a542-8488a6202f1d",
+    "name": "Rami Issa",
+    "email": "rami@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/2420479b-cc3a-4777-a542-8488a6202f1d.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "2b4510a3-1597-48c7-8760-afb40dece206",
+    "code": "CUS-10167",
+    "legacy_number": 10167,
+    "name": "Joelle Hariri",
+    "email": "joelle.hariri@mail.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-06-18T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/2b4510a3-1597-48c7-8760-afb40dece206.png",
+    "ticket_count": 8,
+    "custom_fields": {
+      "crm_id": "crm_2b4510a3",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-09-02T14:00:00.000Z",
+    "resolution_due_at": "2026-09-08T14:00:00.000Z",
+    "first_response_at": "2026-09-02T13:48:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "9b3771da-5a7b-48bd-ae52-557b77900216",
+      "created_at": "2026-09-01T15:25:29.646Z",
+      "author": {
+        "type": "customer",
+        "id": "2b4510a3-1597-48c7-8760-afb40dece206",
+        "name": "Joelle Hariri",
+        "email": "joelle.hariri@mail.test"
+      },
+      "internal": false,
+      "body": "Our 'Refund request' macro is supposed to add the refund tag but it doesn't anymore.",
+      "body_html": "<div dir=\"ltr\"><p>Our 'Refund request' macro is supposed to add the refund tag but it doesn't anymore.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "29aa6dc4-3d14-4130-9cde-2e7248c62747",
+      "created_at": "2026-09-02T13:48:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "2420479b-cc3a-4777-a542-8488a6202f1d",
+        "name": "Rami Issa",
+        "email": "rami@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Joelle, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Joelle, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "27a013fd-b149-40bb-b7ab-9e9e1b4009a3",
+      "created_at": "2026-09-02T17:48:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "2b4510a3-1597-48c7-8760-afb40dece206",
+        "name": "Joelle Hariri",
+        "email": "joelle.hariri@mail.test"
+      },
+      "internal": false,
+      "body": "Thanks, I'll wait for your update.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks, I'll wait for your update.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "62a03eaf-8626-41cc-b596-25bfa7060776",
+      "created_at": "2026-09-02T19:48:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "2420479b-cc3a-4777-a542-8488a6202f1d",
+        "name": "Rami Issa",
+        "email": "rami@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Joelle. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Joelle. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 4,
+    "created_at": "2026-09-01T15:25:29.646Z",
+    "updated_at": "2026-09-04T10:05:00.000Z",
+    "solved_at": "2026-09-04T10:05:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.868Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-01T15:25:29.646Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-01T15:25:29.646Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-01T15:25:29.646Z",
+      "actor": "system",
+      "to": "Rami Issa"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-02T13:48:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-04T10:05:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

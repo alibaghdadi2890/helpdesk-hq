@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "84ff528a-17de-4858-9e41-8e3011bf6372",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/84ff528a-17de-4858-9e41-8e3011bf6372",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2152",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2152,
+  "subject": "Want a refund on our annual subscription",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "30894ffb-f3c1-48af-8bcf-cd9e58053b3a",
+    "code": "CUS-10503",
+    "legacy_number": 10503,
+    "name": "Zeina Karam",
+    "email": "zeina@karam-events.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-03-06T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/30894ffb-f3c1-48af-8bcf-cd9e58053b3a.png",
+    "ticket_count": 3,
+    "custom_fields": {
+      "crm_id": "crm_30894ffb",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-20T14:00:00.000Z",
+    "resolution_due_at": "2026-10-26T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "091c7ac8-6c26-4246-93d2-74e7c06c94a0",
+      "created_at": "2026-10-19T22:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "30894ffb-f3c1-48af-8bcf-cd9e58053b3a",
+        "name": "Zeina Karam",
+        "email": "zeina@karam-events.test"
+      },
+      "internal": false,
+      "body": "We renewed our annual plan two months ago but we're moving to a different tool. Please refund the remaining months.",
+      "body_html": "<div dir=\"ltr\"><p>We renewed our annual plan two months ago but we're moving to a different tool. Please refund the remaining months.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-19T22:31:14.852Z",
+    "updated_at": "2026-10-19T22:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.790Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-19T22:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

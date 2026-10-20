@@ -1,0 +1,15 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+coverage/
+
+# Secrets: never commit these.
+.env
+.env.*
+!.env.example
+
+# Exercise output
+results/
+
+.DS_Store

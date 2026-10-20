@@ -1,0 +1,143 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "4e0a18f4-e382-458f-9d19-00c633e36128",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/4e0a18f4-e382-458f-9d19-00c633e36128",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1989",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1989,
+  "subject": "Mobile app crashes on start",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "c001e008-0ba0-4d53-ba0a-9d9696932bb4",
+    "name": "Mobile App"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "20bb4450-3f9f-4284-a66a-65e579893545",
+    "name": "Jad Khalil",
+    "email": "jad@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/20bb4450-3f9f-4284-a66a-65e579893545.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "d67c1a1b-cbad-43ea-ba70-fae9df14f4ae",
+    "code": "CUS-10063",
+    "legacy_number": 10063,
+    "name": "Lea Khoury",
+    "email": "lea.khoury@post.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2026-07-08T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/d67c1a1b-cbad-43ea-ba70-fae9df14f4ae.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_d67c1a1b",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-10-05T07:00:00.000Z",
+    "resolution_due_at": "2026-10-05T14:00:00.000Z",
+    "first_response_at": "2026-10-05T06:07:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "86821206-c141-43de-b946-5c94a67a719c",
+      "created_at": "2026-10-03T20:43:34.578Z",
+      "author": {
+        "type": "customer",
+        "id": "d67c1a1b-cbad-43ea-ba70-fae9df14f4ae",
+        "name": "Lea Khoury",
+        "email": "lea.khoury@post.test"
+      },
+      "internal": false,
+      "body": "Push notifications on my iPhone arrive 10 to 15 minutes late.",
+      "body_html": "<div dir=\"ltr\"><p>Push notifications on my iPhone arrive 10 to 15 minutes late.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "450c000c-f20c-48eb-8f12-ca0411f3b563",
+      "created_at": "2026-10-05T06:07:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "20bb4450-3f9f-4284-a66a-65e579893545",
+        "name": "Jad Khalil",
+        "email": "jad@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Lea. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Lea. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 2,
+    "created_at": "2026-10-03T20:43:34.578Z",
+    "updated_at": "2026-10-05T10:58:00.000Z",
+    "solved_at": "2026-10-05T10:58:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.888Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-03T20:43:34.578Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-10-03T20:43:34.578Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-10-03T20:43:34.578Z",
+      "actor": "system",
+      "to": "Jad Khalil"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-10-05T06:07:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-10-05T10:58:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "3a3a7e80-37dd-4b99-90b1-cdfab72824a0",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/3a3a7e80-37dd-4b99-90b1-cdfab72824a0",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1806",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1806,
+  "subject": "Report numbers don't match the Inbox",
+  "status": "closed",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+    "name": "Tarek Aoun",
+    "email": "tarek@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a32b5150-9376-4ec7-ad8d-e729c368f7dd.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "808d05ec-97fd-4fdf-8b44-b0a94b8ccf80",
+    "code": "CUS-10087",
+    "legacy_number": 10087,
+    "name": "Aya Farah",
+    "email": "aya.farah@post.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2025-12-27T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/808d05ec-97fd-4fdf-8b44-b0a94b8ccf80.png",
+    "ticket_count": 5,
+    "custom_fields": {
+      "crm_id": "crm_808d05ec",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-09-21T07:00:00.000Z",
+    "resolution_due_at": "2026-09-21T14:00:00.000Z",
+    "first_response_at": "2026-09-21T06:40:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "1eaed033-874f-42a1-96d2-f9d8ee711767",
+      "created_at": "2026-09-20T05:49:19.783Z",
+      "author": {
+        "type": "customer",
+        "id": "808d05ec-97fd-4fdf-8b44-b0a94b8ccf80",
+        "name": "Aya Farah",
+        "email": "aya.farah@post.test"
+      },
+      "internal": false,
+      "body": "Our weekly report used to arrive every Monday and stopped two weeks ago.",
+      "body_html": "<div dir=\"ltr\"><p>Our weekly report used to arrive every Monday and stopped two weeks ago.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "1c04d128-0d2f-4a09-9c16-1029c13a241a",
+      "created_at": "2026-09-21T06:40:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "1f045c9a-fd27-4c82-a566-d134cef12daa",
+      "created_at": "2026-09-21T18:40:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "808d05ec-97fd-4fdf-8b44-b0a94b8ccf80",
+        "name": "Aya Farah",
+        "email": "aya.farah@post.test"
+      },
+      "internal": false,
+      "body": "Any news on this?",
+      "body_html": "<div dir=\"ltr\"><p>Any news on this?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "58ebf714-cda5-4dce-9075-42c135098d4f",
+      "created_at": "2026-09-21T22:40:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "a9c9f409-096e-49b3-898b-52d5912190f7",
+      "created_at": "2026-09-22T00:40:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "808d05ec-97fd-4fdf-8b44-b0a94b8ccf80",
+        "name": "Aya Farah",
+        "email": "aya.farah@post.test"
+      },
+      "internal": false,
+      "body": "Sorry, I sent the wrong file earlier. Here is the right one.",
+      "body_html": "<div dir=\"ltr\"><p>Sorry, I sent the wrong file earlier. Here is the right one.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "007c8429-d231-4eb0-bcd4-e8df088e3a0f",
+      "created_at": "2026-09-22T02:40:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Aya, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Aya, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-09-20T05:49:19.783Z",
+    "updated_at": "2026-09-22T03:40:00.000Z",
+    "solved_at": "2026-09-22T03:40:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.878Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-20T05:49:19.783Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-20T05:49:19.783Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-20T05:49:19.783Z",
+      "actor": "system",
+      "to": "Tarek Aoun"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-21T06:40:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-22T03:40:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "fc3f3314-3f47-48c6-804f-955f7c417fa8",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/fc3f3314-3f47-48c6-804f-955f7c417fa8",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2150",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2150,
+  "subject": "How do I export a report to Excel?",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "a3433efa-6c29-4957-b7a3-ac9252d18c40",
+    "code": "CUS-10501",
+    "legacy_number": 10501,
+    "name": "Maha Najjar",
+    "email": "maha@najjar-foods.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-02-17T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a3433efa-6c29-4957-b7a3-ac9252d18c40.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_a3433efa",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-20T10:31:14.852Z",
+    "resolution_due_at": "2026-10-26T10:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "0bf3467c-9ba6-428c-a5bc-bec26b409d91",
+      "created_at": "2026-10-19T10:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "a3433efa-6c29-4957-b7a3-ac9252d18c40",
+        "name": "Maha Najjar",
+        "email": "maha@najjar-foods.test"
+      },
+      "internal": false,
+      "body": "Hi, I need to get our monthly ticket volume report into Excel for my manager. How do I export it? It has about 80,000 rows.",
+      "body_html": "<div dir=\"ltr\"><p>Hi, I need to get our monthly ticket volume report into Excel for my manager. How do I export it? It has about 80,000 rows.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-19T10:31:14.852Z",
+    "updated_at": "2026-10-19T10:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.781Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-19T10:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

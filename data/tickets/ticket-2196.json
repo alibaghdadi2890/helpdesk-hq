@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "8a34c393-5a5e-44d8-9600-8c4d38376efc",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/8a34c393-5a5e-44d8-9600-8c4d38376efc",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2196",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2196,
+  "subject": "Exported report is blank",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "a63fe6ee-17d4-4c5b-9f0f-b7445430b240",
+    "code": "CUS-10481",
+    "legacy_number": 10481,
+    "name": "Hadi Farah",
+    "email": "hadi@farah-travel.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2025-12-08T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a63fe6ee-17d4-4c5b-9f0f-b7445430b240.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_a63fe6ee",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T12:31:14.852Z",
+    "resolution_due_at": "2026-10-27T12:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "b1f23836-0fc1-4204-8fce-aa71df8ec657",
+      "created_at": "2026-10-20T12:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "a63fe6ee-17d4-4c5b-9f0f-b7445430b240",
+        "name": "Hadi Farah",
+        "email": "hadi@farah-travel.test"
+      },
+      "internal": false,
+      "body": "Every report I export comes out blank. CSV and PDF both. Is something down?",
+      "body_html": "<div dir=\"ltr\"><p>Every report I export comes out blank. CSV and PDF both. Is something down?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T12:31:14.852Z",
+    "updated_at": "2026-10-20T12:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.772Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T12:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "967f3a88-f847-42ff-8bd8-e2e1118bc201",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/967f3a88-f847-42ff-8bd8-e2e1118bc201",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2207",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2207,
+  "subject": "لا تصلني الإشعارات على تطبيق الهاتف",
+  "status": "open",
+  "channel": "chat",
+  "language": "ar",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "c001e008-0ba0-4d53-ba0a-9d9696932bb4",
+    "name": "Mobile App"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "2420479b-cc3a-4777-a542-8488a6202f1d",
+    "name": "Rami Issa",
+    "email": "rami@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/2420479b-cc3a-4777-a542-8488a6202f1d.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "76060676-0fc3-43bc-bde3-b8d30dee320f",
+    "code": "CUS-10460",
+    "legacy_number": 10460,
+    "name": "Rania Khoury",
+    "email": "rania@khoury-design.test",
+    "language": "ar",
+    "plan": "standard",
+    "created_at": "2026-05-15T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/76060676-0fc3-43bc-bde3-b8d30dee320f.png",
+    "ticket_count": 8,
+    "custom_fields": {
+      "crm_id": "crm_76060676",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-20T14:00:00.000Z",
+    "resolution_due_at": "2026-10-26T14:00:00.000Z",
+    "first_response_at": "2026-10-19T15:01:14.852Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "9ba966e7-3b17-4854-9f6c-b1b1338cbb5a",
+      "created_at": "2026-10-19T14:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "76060676-0fc3-43bc-bde3-b8d30dee320f",
+        "name": "Rania Khoury",
+        "email": "rania@khoury-design.test"
+      },
+      "internal": false,
+      "body": "مرحباً، منذ يومين لا تصلني أي إشعارات من تطبيق Helpdesk HQ على هاتفي عندما تصل تذكرة جديدة. هاتفي سامسونج.",
+      "body_html": "<div dir=\"rtl\"><p>مرحباً، منذ يومين لا تصلني أي إشعارات من تطبيق Helpdesk HQ على هاتفي عندما تصل تذكرة جديدة. هاتفي سامسونج.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "3ea6db39-7499-413c-a61b-db37cbbaa25c",
+      "created_at": "2026-10-19T15:01:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "2420479b-cc3a-4777-a542-8488a6202f1d",
+        "name": "Rami Issa",
+        "email": "rami@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "مرحباً رانيا، شكراً لتواصلك. هل الإشعارات مفعّلة داخل التطبيق من الإعدادات؟",
+      "body_html": "<div dir=\"rtl\"><p>مرحباً رانيا، شكراً لتواصلك. هل الإشعارات مفعّلة داخل التطبيق من الإعدادات؟</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "a47e5596-a352-46d2-a4fa-90b3000bf5f2",
+      "created_at": "2026-10-19T15:26:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "76060676-0fc3-43bc-bde3-b8d30dee320f",
+        "name": "Rania Khoury",
+        "email": "rania@khoury-design.test"
+      },
+      "internal": false,
+      "body": "نعم مفعّلة داخل التطبيق، وجربت إعادة تشغيل الهاتف.",
+      "body_html": "<div dir=\"rtl\"><p>نعم مفعّلة داخل التطبيق، وجربت إعادة تشغيل الهاتف.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "994e5c69-4a8d-412d-9c3a-4fc2326ee011",
+      "created_at": "2026-10-20T12:11:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "76060676-0fc3-43bc-bde3-b8d30dee320f",
+        "name": "Rania Khoury",
+        "email": "rania@khoury-design.test"
+      },
+      "internal": false,
+      "body": "ما زالت المشكلة موجودة اليوم. ماذا يمكنني أن أفعل؟",
+      "body_html": "<div dir=\"rtl\"><p>ما زالت المشكلة موجودة اليوم. ماذا يمكنني أن أفعل؟</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 4,
+    "created_at": "2026-10-19T14:31:14.852Z",
+    "updated_at": "2026-10-20T12:11:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.762Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-19T14:31:14.852Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-10-19T14:31:14.852Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-10-19T14:31:14.852Z",
+      "actor": "system",
+      "to": "Rami Issa"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-10-19T15:01:14.852Z",
+      "actor": "agent"
+    }
+  ]
+}

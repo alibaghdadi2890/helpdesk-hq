@@ -1,0 +1,12 @@
+[
+  { "id": "A01", "text": "The Billing Portal won't let me download invoices. It just shows an error.", "why": "billing or bug: a billing page, but the problem is a malfunction" },
+  { "id": "A02", "text": "I can't find where to turn off email notifications. Is this even possible?", "why": "how_to or feature_request" },
+  { "id": "A03", "text": "Our reports are slow. Can you make them faster?", "why": "bug or feature_request" },
+  { "id": "A04", "text": "I was locked out after my admin removed my seat. Can I get access back?", "why": "account or billing" },
+  { "id": "A05", "text": "Why does the API only return 100 tickets per page? We need all of them.", "why": "how_to or feature_request" },
+  { "id": "A06", "text": "We'd like to cancel. Your product doesn't do what the sales team promised.", "why": "billing or other" },
+  { "id": "A07", "text": "The mobile app logs me out every day. Is that a security setting?", "why": "account, bug or how_to" },
+  { "id": "A08", "text": "Can we get a discount if we add 50 more seats?", "why": "billing or other" },
+  { "id": "A09", "text": "Search in the help centre finds nothing for Arabic words.", "why": "bug or feature_request" },
+  { "id": "A10", "text": "Is there a limit on how many macros we can create? We hit some kind of wall at 200.", "why": "how_to or bug" }
+]

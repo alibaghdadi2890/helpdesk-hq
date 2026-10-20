@@ -1,0 +1,165 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "60a85d5d-7b13-4d79-801d-dae2affbe2e4",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/60a85d5d-7b13-4d79-801d-dae2affbe2e4",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1500",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1500,
+  "subject": "VAT number missing on invoice INV-2026-0012",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+    "name": "Lina Saab",
+    "email": "lina@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/7c570089-3a34-4d83-841a-abe1f6f21057.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+    "code": "CUS-10442",
+    "legacy_number": 10442,
+    "name": "Sara Haddad",
+    "email": "sara.haddad@brightlane.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-02-01T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/889f8a8e-e13e-4b87-955a-de3978b96f36.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_889f8a8e",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-08-24T08:00:00.000Z",
+    "resolution_due_at": "2026-08-25T14:00:00.000Z",
+    "first_response_at": "2026-08-21T17:31:14.852Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "7d6aa969-8b48-4e1d-aea8-67c2906da112",
+      "created_at": "2026-08-21T16:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+        "name": "Sara Haddad",
+        "email": "sara.haddad@brightlane.test"
+      },
+      "internal": false,
+      "body": "Our VAT number is missing from invoice INV-2026-0012. Our accountant needs it.",
+      "body_html": "<div dir=\"ltr\"><p>Our VAT number is missing from invoice INV-2026-0012. Our accountant needs it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "d0763d97-2d8a-42d5-a4d1-c1aa4379aab8",
+      "created_at": "2026-08-21T17:31:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Sara, I've added the VAT number to your billing details and reissued the invoice. You'll find it in Billing Portal > Invoices.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Sara, I've added the VAT number to your billing details and reissued the invoice. You'll find it in Billing Portal &gt; Invoices.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "3e583600-5d20-4a38-af0a-6d79e2718abb",
+      "created_at": "2026-08-21T18:01:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+        "name": "Sara Haddad",
+        "email": "sara.haddad@brightlane.test"
+      },
+      "internal": false,
+      "body": "Perfect, thank you.",
+      "body_html": "<div dir=\"ltr\"><p>Perfect, thank you.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 3,
+    "created_at": "2026-08-21T16:31:14.852Z",
+    "updated_at": "2026-08-21T18:01:14.852Z",
+    "solved_at": "2026-08-22T12:31:14.852Z",
+    "exported_at": "2026-10-20T16:31:16.765Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-08-21T16:31:14.852Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-08-21T16:31:14.852Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-08-21T16:31:14.852Z",
+      "actor": "system",
+      "to": "Lina Saab"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-08-21T17:31:14.852Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-08-22T12:31:14.852Z",
+      "actor": "agent"
+    }
+  ]
+}

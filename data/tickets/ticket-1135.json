@@ -1,0 +1,188 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "80cf72fb-b41c-4fe1-aa9f-973b5d39840d",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/80cf72fb-b41c-4fe1-aa9f-973b5d39840d",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1135",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1135,
+  "subject": "Wrong amount on our latest invoice",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+    "name": "Lina Saab",
+    "email": "lina@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/7c570089-3a34-4d83-841a-abe1f6f21057.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "3e7b1607-fc6b-4221-8ced-c60a881fd5bd",
+    "code": "CUS-10267",
+    "legacy_number": 10267,
+    "name": "Lama Khoury",
+    "email": "lama.khoury@post.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-03-30T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/3e7b1607-fc6b-4221-8ced-c60a881fd5bd.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_3e7b1607",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-08-03T14:00:00.000Z",
+    "resolution_due_at": "2026-08-07T14:00:00.000Z",
+    "first_response_at": "2026-08-03T13:23:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "431c35fa-bc0e-4a71-964f-0189a7655f70",
+      "created_at": "2026-07-31T23:44:23.893Z",
+      "author": {
+        "type": "customer",
+        "id": "3e7b1607-fc6b-4221-8ced-c60a881fd5bd",
+        "name": "Lama Khoury",
+        "email": "lama.khoury@post.test"
+      },
+      "internal": false,
+      "body": "Our finance team needs our VAT number on invoice INV-2026-0926. Can this be added?",
+      "body_html": "<div dir=\"ltr\"><p>Our finance team needs our VAT number on invoice INV-2026-0926. Can this be added?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "827f830d-9fcd-4a23-b7d8-595516b60bff",
+      "created_at": "2026-08-03T13:23:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks for your patience, Lama. I've passed this to our technical team and will update you as soon as I hear back.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks for your patience, Lama. I've passed this to our technical team and will update you as soon as I hear back.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "e617a170-fb4d-4715-b9e3-56ddb2632e13",
+      "created_at": "2026-08-03T15:23:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "3e7b1607-fc6b-4221-8ced-c60a881fd5bd",
+        "name": "Lama Khoury",
+        "email": "lama.khoury@post.test"
+      },
+      "internal": false,
+      "body": "I've attached the screenshot you asked for.",
+      "body_html": "<div dir=\"ltr\"><p>I've attached the screenshot you asked for.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "0c8d0345-0e8a-4aa5-ac08-49c38bcf9f95",
+      "created_at": "2026-08-03T18:23:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Lama, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Lama, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 4,
+    "created_at": "2026-07-31T23:44:23.893Z",
+    "updated_at": "2026-08-11T09:40:00.000Z",
+    "solved_at": "2026-08-11T09:40:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.850Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-07-31T23:44:23.893Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-07-31T23:44:23.893Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-07-31T23:44:23.893Z",
+      "actor": "system",
+      "to": "Lina Saab"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-08-03T13:23:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-08-11T09:40:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

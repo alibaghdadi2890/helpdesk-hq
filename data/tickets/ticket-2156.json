@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "2da4166f-6b3c-4849-8bb2-c0529c5863f0",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/2da4166f-6b3c-4849-8bb2-c0529c5863f0",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2156",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2156,
+  "subject": "Webhooks stopped arriving",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "ae49e76d-a578-4291-ac69-d692f2ab98ae",
+    "name": "API"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "3bd895a9-4735-4275-b553-c06da71922d3",
+    "code": "CUS-10507",
+    "legacy_number": 10507,
+    "name": "Samir Hariri",
+    "email": "samir@hariri-shop.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-03-21T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/3bd895a9-4735-4275-b553-c06da71922d3.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_3bd895a9",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-20T08:00:00.000Z",
+    "resolution_due_at": "2026-10-21T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "c8c693f4-f206-4085-b632-1252c988d3c7",
+      "created_at": "2026-10-20T02:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "3bd895a9-4735-4275-b553-c06da71922d3",
+        "name": "Samir Hariri",
+        "email": "samir@hariri-shop.test"
+      },
+      "internal": false,
+      "body": "We stopped receiving ticket.updated webhooks yesterday afternoon. Our server was down for maintenance for about an hour. Did you stop sending?",
+      "body_html": "<div dir=\"ltr\"><p>We stopped receiving ticket.updated webhooks yesterday afternoon. Our server was down for maintenance for about an hour. Did you stop sending?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T02:31:14.852Z",
+    "updated_at": "2026-10-20T02:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.803Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T02:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

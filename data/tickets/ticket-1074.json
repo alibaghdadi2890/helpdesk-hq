@@ -1,0 +1,233 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "e88a2ac3-0ffc-4648-a410-724be495f828",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/e88a2ac3-0ffc-4648-a410-724be495f828",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1074",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1074,
+  "subject": "Card declined when paying",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+    "name": "Lina Saab",
+    "email": "lina@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/7c570089-3a34-4d83-841a-abe1f6f21057.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "ea28c61d-574b-41b9-a0cb-ab5452d82f60",
+    "code": "CUS-10015",
+    "legacy_number": 10015,
+    "name": "George Zahran",
+    "email": "george.zahran@example.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-06-21T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/ea28c61d-574b-41b9-a0cb-ab5452d82f60.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_ea28c61d",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-07-28T10:14:48.550Z",
+    "resolution_due_at": "2026-08-03T10:14:48.550Z",
+    "first_response_at": "2026-07-28T06:04:48.550Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "842833c7-9557-4828-b6c5-0f794bf00488",
+      "created_at": "2026-07-27T10:14:48.550Z",
+      "author": {
+        "type": "customer",
+        "id": "ea28c61d-574b-41b9-a0cb-ab5452d82f60",
+        "name": "George Zahran",
+        "email": "george.zahran@example.test"
+      },
+      "internal": false,
+      "body": "Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?",
+      "body_html": "<div dir=\"ltr\"><p>Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "02c581b0-feee-47dd-92f5-6d4be95b46c7",
+      "created_at": "2026-07-28T06:04:48.550Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi George, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi George, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "d77daada-ee31-4ef3-a690-ef0f8f0ec5d1",
+      "created_at": "2026-07-28T23:04:48.550Z",
+      "author": {
+        "type": "customer",
+        "id": "ea28c61d-574b-41b9-a0cb-ab5452d82f60",
+        "name": "George Zahran",
+        "email": "george.zahran@example.test"
+      },
+      "internal": false,
+      "body": "Any news on this?",
+      "body_html": "<div dir=\"ltr\"><p>Any news on this?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "320f7911-e6c2-4f1e-8717-fc581de42c07",
+      "created_at": "2026-07-29T00:04:48.550Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi George, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi George, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "f2fb8ad6-4b54-4a84-9e2a-afb1d0470677",
+      "created_at": "2026-07-29T05:04:48.550Z",
+      "author": {
+        "type": "customer",
+        "id": "ea28c61d-574b-41b9-a0cb-ab5452d82f60",
+        "name": "George Zahran",
+        "email": "george.zahran@example.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "494a0a13-3992-4eb4-a5ae-aaaee1a8214b",
+      "created_at": "2026-07-29T08:04:48.550Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi George, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi George, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-07-27T10:14:48.550Z",
+    "updated_at": "2026-07-30T06:45:48.550Z",
+    "solved_at": "2026-07-30T06:45:48.550Z",
+    "exported_at": "2026-10-20T16:31:16.847Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-07-27T10:14:48.550Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-07-27T10:14:48.550Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-07-27T10:14:48.550Z",
+      "actor": "system",
+      "to": "Lina Saab"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-07-28T06:04:48.550Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-07-30T06:45:48.550Z",
+      "actor": "agent"
+    }
+  ]
+}

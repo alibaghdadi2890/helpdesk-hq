@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "506e518b-c0cc-49a4-a53d-15c3745dd985",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/506e518b-c0cc-49a4-a53d-15c3745dd985",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2158",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2158,
+  "subject": "How do I add two new agents?",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "e31064dd-90e5-457c-bd52-173c89eab420",
+    "code": "CUS-10509",
+    "legacy_number": 10509,
+    "name": "Dana Matar",
+    "email": "dana@matar-labs.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2025-10-11T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/e31064dd-90e5-457c-bd52-173c89eab420.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_e31064dd",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-20T08:00:00.000Z",
+    "resolution_due_at": "2026-10-21T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "379c42e6-9bf1-43ab-9384-6bb9adcfd4b3",
+      "created_at": "2026-10-20T04:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "e31064dd-90e5-457c-bd52-173c89eab420",
+        "name": "Dana Matar",
+        "email": "dana@matar-labs.test"
+      },
+      "internal": false,
+      "body": "We hired two new support agents. How do I give them access? I'm the admin on our account.",
+      "body_html": "<div dir=\"ltr\"><p>We hired two new support agents. How do I give them access? I'm the admin on our account.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T04:31:14.852Z",
+    "updated_at": "2026-10-20T04:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.810Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T04:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+[
+  { "id": "K01", "tenant": "hq", "question": "What is the subject of ticket 1042?", "check": "charged twice" },
+  { "id": "K02", "tenant": "hq", "question": "Which plan is customer CUS-10442 on?", "check": "priority" },
+  { "id": "K03", "tenant": "hq", "question": "How many customer-visible messages does ticket 1188 have?", "check": "\\b11\\b" },
+  { "id": "K04", "tenant": "hq", "question": "What does the help centre say the API rate limit is?", "check": "600" },
+  { "id": "K05", "tenant": "hq", "question": "Which product is ticket 1311 about?", "check": "\\bAPI\\b" },
+  { "id": "K06", "tenant": "hq", "question": "What language is ticket 2207 written in?", "check": "arabic|\\bar\\b" },
+  { "id": "K07", "tenant": "hq", "question": "How long do duplicate-charge refunds take?", "check": "5\\s*(–|-|to)\\s*10 business days" },
+  { "id": "K08", "tenant": "hq", "question": "What is the status of ticket 1105?", "check": "\\bnew\\b" },
+  { "id": "K09", "tenant": "hq", "question": "What is the name of the customer on ticket 1188?", "check": "Karim Nassar" },
+  { "id": "K10", "tenant": "hq", "question": "How many other Reports tickets were created within 24 hours of ticket 1105?", "check": "\\b4\\b|\\bfour\\b" },
+  { "id": "K11", "tenant": "hq", "question": "Which help article explains how to reset a password?", "check": "kb-accounts-password-reset|Resetting your password" },
+  { "id": "K12", "tenant": "hq", "question": "What is the email address of customer CUS-10518?", "check": "karim\\.nassar@cedarwood\\.test" },
+  { "id": "K13", "tenant": "hq", "question": "How long is a password reset link valid?", "check": "30 minutes" },
+  { "id": "K14", "tenant": "hq", "question": "Which plan is the customer on ticket 2207 on?", "check": "standard" },
+  { "id": "K15", "tenant": "hq", "question": "What invoice number is mentioned in ticket 1042?", "check": "INV-2026-0041" }
+]

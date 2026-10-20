@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "38d08e1d-db92-4837-80f2-e1839f67a899",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/38d08e1d-db92-4837-80f2-e1839f67a899",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2159",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2159,
+  "subject": "Lost my phone, locked out by two-factor",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "0c101477-1bf7-461f-9121-03bb636c127f",
+    "code": "CUS-10510",
+    "legacy_number": 10510,
+    "name": "Bilal Jaber",
+    "email": "bilal@jaber-builders.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2025-10-21T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/0c101477-1bf7-461f-9121-03bb636c127f.png",
+    "ticket_count": 5,
+    "custom_fields": {
+      "crm_id": "crm_0c101477",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-20T14:00:00.000Z",
+    "resolution_due_at": "2026-10-26T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "63928567-d737-4848-939d-32f8ff35d61a",
+      "created_at": "2026-10-20T05:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "0c101477-1bf7-461f-9121-03bb636c127f",
+        "name": "Bilal Jaber",
+        "email": "bilal@jaber-builders.test"
+      },
+      "internal": false,
+      "body": "I lost my phone and now I can't get the two-factor code to sign in. I didn't save the backup codes. Can you turn it off for me?",
+      "body_html": "<div dir=\"ltr\"><p>I lost my phone and now I can't get the two-factor code to sign in. I didn't save the backup codes. Can you turn it off for me?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T05:31:14.852Z",
+    "updated_at": "2026-10-20T05:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.813Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T05:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

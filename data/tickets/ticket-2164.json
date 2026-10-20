@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "fbccc5bb-f175-4b77-9c4a-af0b1a273a88",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/fbccc5bb-f175-4b77-9c4a-af0b1a273a88",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2164",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2164,
+  "subject": "I have filed a chargeback",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "3f45b3e8-b2e8-4ca1-91fb-5b251d54b752",
+    "code": "CUS-10515",
+    "legacy_number": 10515,
+    "name": "Reem Hamdan",
+    "email": "reem@hamdan-boutique.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-02-11T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/3f45b3e8-b2e8-4ca1-91fb-5b251d54b752.png",
+    "ticket_count": 2,
+    "custom_fields": {
+      "crm_id": "crm_3f45b3e8",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T10:31:14.852Z",
+    "resolution_due_at": "2026-10-27T10:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "e06e6571-09e4-4b62-93e2-9da9bbfcb728",
+      "created_at": "2026-10-20T10:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "3f45b3e8-b2e8-4ca1-91fb-5b251d54b752",
+        "name": "Reem Hamdan",
+        "email": "reem@hamdan-boutique.test"
+      },
+      "internal": false,
+      "body": "Nobody answered my billing question for a week so I have filed a chargeback with my bank for last month's payment.",
+      "body_html": "<div dir=\"ltr\"><p>Nobody answered my billing question for a week so I have filed a chargeback with my bank for last month's payment.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T10:31:14.852Z",
+    "updated_at": "2026-10-20T10:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.829Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T10:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

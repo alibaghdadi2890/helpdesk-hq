@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "8d0d2c5a-e49f-41b7-85d2-13541e9d8a81",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/8d0d2c5a-e49f-41b7-85d2-13541e9d8a81",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2154",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2154,
+  "subject": "Password reset email never arrives",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "fb238e6d-1096-4ad3-9033-fe675834b77f",
+    "code": "CUS-10505",
+    "legacy_number": 10505,
+    "name": "Mira Sleiman",
+    "email": "mira.sleiman@northpeak.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2025-12-10T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/fb238e6d-1096-4ad3-9033-fe675834b77f.png",
+    "ticket_count": 5,
+    "custom_fields": {
+      "crm_id": "crm_fb238e6d",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-20T14:00:00.000Z",
+    "resolution_due_at": "2026-10-26T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "7dedc82d-71c5-42a3-899b-f8bc002b5f50",
+      "created_at": "2026-10-20T00:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "fb238e6d-1096-4ad3-9033-fe675834b77f",
+        "name": "Mira Sleiman",
+        "email": "mira.sleiman@northpeak.test"
+      },
+      "internal": false,
+      "body": "I clicked Forgot password twice and no email has come. I need to get into my account today.",
+      "body_html": "<div dir=\"ltr\"><p>I clicked Forgot password twice and no email has come. I need to get into my account today.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T00:31:14.852Z",
+    "updated_at": "2026-10-20T00:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.796Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T00:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "9999278d-b027-458d-8e9d-21699701fdf2",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/9999278d-b027-458d-8e9d-21699701fdf2",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1745",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1745,
+  "subject": "How do I change our payment card?",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+    "name": "Maya Ghanem",
+    "email": "maya@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/b0128acf-dadd-457e-a5fa-5d2501abfe7b.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "aae85a19-25b6-4d3f-9910-0c40fb9ac303",
+    "code": "CUS-10026",
+    "legacy_number": 10026,
+    "name": "Aya Rizk",
+    "email": "aya.rizk@mail.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2025-12-16T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/aae85a19-25b6-4d3f-9910-0c40fb9ac303.png",
+    "ticket_count": 3,
+    "custom_fields": {
+      "crm_id": "crm_aae85a19",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-09-16T07:31:14.852Z",
+    "resolution_due_at": "2026-09-17T13:31:14.852Z",
+    "first_response_at": "2026-09-16T06:38:14.852Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "26d75286-d574-474e-9355-c3adec1fbadb",
+      "created_at": "2026-09-15T13:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "aae85a19-25b6-4d3f-9910-0c40fb9ac303",
+        "name": "Aya Rizk",
+        "email": "aya.rizk@mail.test"
+      },
+      "internal": false,
+      "body": "Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?",
+      "body_html": "<div dir=\"ltr\"><p>Our renewal failed and the Billing Portal says the card was declined. The card works elsewhere. What should we do?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "8ddb0dc5-5000-4423-8fcf-66c86ebbefcc",
+      "created_at": "2026-09-16T06:38:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks for your patience, Aya. I've passed this to our technical team and will update you as soon as I hear back.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks for your patience, Aya. I've passed this to our technical team and will update you as soon as I hear back.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "039180b5-16fc-41d1-a792-8290e69855f2",
+      "created_at": "2026-09-16T09:38:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "aae85a19-25b6-4d3f-9910-0c40fb9ac303",
+        "name": "Aya Rizk",
+        "email": "aya.rizk@mail.test"
+      },
+      "internal": false,
+      "body": "That worked, thank you!",
+      "body_html": "<div dir=\"ltr\"><p>That worked, thank you!</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "8dcdb7b7-cc0e-4bef-b7b0-5c883c4b085a",
+      "created_at": "2026-09-16T14:38:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Aya. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "1a67e9d4-bc49-4e59-b774-e8988c0a6410",
+      "created_at": "2026-09-17T08:38:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "aae85a19-25b6-4d3f-9910-0c40fb9ac303",
+        "name": "Aya Rizk",
+        "email": "aya.rizk@mail.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "92815f42-1952-4874-bf73-1f328b7a4ac8",
+      "created_at": "2026-09-17T13:38:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Aya, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Aya, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-09-15T13:31:14.852Z",
+    "updated_at": "2026-09-17T14:38:14.852Z",
+    "solved_at": "2026-09-17T14:38:14.852Z",
+    "exported_at": "2026-10-20T16:31:16.876Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-15T13:31:14.852Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-15T13:31:14.852Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-15T13:31:14.852Z",
+      "actor": "system",
+      "to": "Maya Ghanem"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-16T06:38:14.852Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-17T14:38:14.852Z",
+      "actor": "agent"
+    }
+  ]
+}

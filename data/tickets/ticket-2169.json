@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "95248c8b-dee6-4672-b87e-d75ae918d25a",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/95248c8b-dee6-4672-b87e-d75ae918d25a",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2169",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2169,
+  "subject": "Remove a former employee",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "903ae485-a148-423d-a2b7-509ab29c2c06",
+    "code": "CUS-10521",
+    "legacy_number": 10521,
+    "name": "Khaled Al Suwaidi",
+    "email": "khaled@alsuwaidi-group.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-03-22T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/903ae485-a148-423d-a2b7-509ab29c2c06.png",
+    "ticket_count": 5,
+    "custom_fields": {
+      "crm_id": "crm_903ae485",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-21T08:00:00.000Z",
+    "resolution_due_at": "2026-10-22T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "c7fcf0ce-7343-4cbe-9427-6bee5da3ddee",
+      "created_at": "2026-10-20T15:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "903ae485-a148-423d-a2b7-509ab29c2c06",
+        "name": "Khaled Al Suwaidi",
+        "email": "khaled@alsuwaidi-group.test"
+      },
+      "internal": false,
+      "body": "One of our agents left last week. How do I remove her access and stop paying for her seat?",
+      "body_html": "<div dir=\"ltr\"><p>One of our agents left last week. How do I remove her access and stop paying for her seat?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T15:31:14.852Z",
+    "updated_at": "2026-10-20T15:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.842Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T15:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "helpdesk-hq",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The course project for AI Agent Engineer: a multi-tenant customer-support desk.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:migrate": "tsx scripts/db/migrate.ts",
+    "db:seed": "tsx scripts/db/seed.ts",
+    "db:reset": "tsx scripts/db/reset.ts",
+    "data:export": "tsx scripts/data/export-tickets.ts",
+    "jobs:close-solved": "tsx scripts/jobs/close-solved.ts",
+    "hello": "tsx scripts/ch00/hello.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.0",
+    "jose": "^6.2.0",
+    "next": "^16.0.0",
+    "pg": "^8.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.15.0",
+    "@types/react": "^19.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}

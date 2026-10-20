@@ -1,0 +1,112 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "8e82f174-a1e1-49ee-b5f6-3b984caedd49",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/8e82f174-a1e1-49ee-b5f6-3b984caedd49",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1105",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1105,
+  "subject": "CSV export downloads an empty file",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "a91ea96c-361f-4399-8665-6b19aaed7c27",
+    "code": "CUS-10480",
+    "legacy_number": 10480,
+    "name": "Lea Mansour",
+    "email": "lea@mansour-media.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2025-11-15T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a91ea96c-361f-4399-8665-6b19aaed7c27.png",
+    "ticket_count": 2,
+    "custom_fields": {
+      "crm_id": "crm_a91ea96c",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-20T13:31:14.852Z",
+    "resolution_due_at": "2026-10-22T11:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "a949033c-111e-4304-83e8-aa5c8e4948c6",
+      "created_at": "2026-10-20T11:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "a91ea96c-361f-4399-8665-6b19aaed7c27",
+        "name": "Lea Mansour",
+        "email": "lea@mansour-media.test"
+      },
+      "internal": false,
+      "body": "When I export the ticket volume report as CSV, the file downloads but it's empty, only the header row. It worked fine last week.",
+      "body_html": "<div dir=\"ltr\"><p>When I export the ticket volume report as CSV, the file downloads but it's empty, only the header row. It worked fine last week.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "2138dc6b-3bf2-4847-bf39-c984576e17ee",
+      "created_at": "2026-10-20T11:56:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "a91ea96c-361f-4399-8665-6b19aaed7c27",
+        "name": "Lea Mansour",
+        "email": "lea@mansour-media.test"
+      },
+      "internal": false,
+      "body": "Same thing happens with PDF export now. Two people on my team see it too.",
+      "body_html": "<div dir=\"ltr\"><p>Same thing happens with PDF export now. Two people on my team see it too.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 2,
+    "created_at": "2026-10-20T11:31:14.852Z",
+    "updated_at": "2026-10-20T11:56:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.754Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T11:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

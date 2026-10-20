@@ -1,0 +1,188 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "ba2ef189-940a-478f-8356-7a901d293ecd",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/ba2ef189-940a-478f-8356-7a901d293ecd",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1928",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1928,
+  "subject": "Question about invoice INV-2026-0402",
+  "status": "closed",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+    "name": "Maya Ghanem",
+    "email": "maya@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/b0128acf-dadd-457e-a5fa-5d2501abfe7b.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "f0318863-d62b-4134-a08c-1f9721f21c7a",
+    "code": "CUS-10239",
+    "legacy_number": 10239,
+    "name": "Sara Bitar",
+    "email": "sara.bitar@mail.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-03-09T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/f0318863-d62b-4134-a08c-1f9721f21c7a.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_f0318863",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-09-29T08:00:00.000Z",
+    "resolution_due_at": "2026-09-30T14:00:00.000Z",
+    "first_response_at": "2026-09-29T06:33:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "f62c052a-089e-4784-98f3-82d90fbb70a2",
+      "created_at": "2026-09-29T05:25:29.646Z",
+      "author": {
+        "type": "customer",
+        "id": "f0318863-d62b-4134-a08c-1f9721f21c7a",
+        "name": "Sara Bitar",
+        "email": "sara.bitar@mail.test"
+      },
+      "internal": false,
+      "body": "Hi, our invoice INV-2026-0402 shows USD 254 but we expected less because we removed two seats last month. Can you check?",
+      "body_html": "<div dir=\"ltr\"><p>Hi, our invoice INV-2026-0402 shows USD 254 but we expected less because we removed two seats last month. Can you check?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "7bf61de3-4ea4-4396-a0c1-d096ebffdc63",
+      "created_at": "2026-09-29T06:33:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Sara, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Sara, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "553d6c37-b727-4fa4-a7fd-29de3e094232",
+      "created_at": "2026-09-29T19:33:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "f0318863-d62b-4134-a08c-1f9721f21c7a",
+        "name": "Sara Bitar",
+        "email": "sara.bitar@mail.test"
+      },
+      "internal": false,
+      "body": "That worked, thank you!",
+      "body_html": "<div dir=\"ltr\"><p>That worked, thank you!</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "6e4162b3-ca4b-4849-9630-1ca0ecdbfbb3",
+      "created_at": "2026-09-30T01:33:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "b0128acf-dadd-457e-a5fa-5d2501abfe7b",
+        "name": "Maya Ghanem",
+        "email": "maya@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Sara, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Sara, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 4,
+    "created_at": "2026-09-29T05:25:29.646Z",
+    "updated_at": "2026-09-30T02:33:00.000Z",
+    "solved_at": "2026-09-30T02:33:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.885Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-29T05:25:29.646Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-29T05:25:29.646Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-29T05:25:29.646Z",
+      "actor": "system",
+      "to": "Maya Ghanem"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-29T06:33:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-30T02:33:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "7cc68d31-64c4-44c1-9296-7653fbb4a1f8",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/7cc68d31-64c4-44c1-9296-7653fbb4a1f8",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1311",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1311,
+  "subject": "API 429 errors and webhooks disabled every morning",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "ae49e76d-a578-4291-ac69-d692f2ab98ae",
+    "name": "API"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "aa1abc0d-3851-4ef8-b0c0-e5ffc2541a89",
+    "code": "CUS-10471",
+    "legacy_number": 10471,
+    "name": "Tony Saliba",
+    "email": "tony@saliba-logistics.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2025-12-13T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/aa1abc0d-3851-4ef8-b0c0-e5ffc2541a89.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_aa1abc0d",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-10-20T09:31:14.852Z",
+    "resolution_due_at": "2026-10-21T08:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "24039af4-a596-4fbd-9cf8-3ca855fe942f",
+      "created_at": "2026-10-20T08:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "aa1abc0d-3851-4ef8-b0c0-e5ffc2541a89",
+        "name": "Tony Saliba",
+        "email": "tony@saliba-logistics.test"
+      },
+      "internal": false,
+      "body": "Hello,\n\nWe run a logistics platform that syncs delivery exceptions into Helpdesk HQ through your API, and since Monday we are seeing a pattern of failures that I'd like help with.\n\nOur integration does three things. Every 2 minutes it polls GET /tickets for tickets updated in the last 5 minutes. For every delivery exception from our warehouse system it creates a ticket with POST /tickets. And it listens for ticket.updated webhooks so that when an agent solves a ticket we can close the exception on our side.\n\nWhat we see:\n\n1. Between 08:00 and 10:00 our time, when our warehouses open, roughly 1 in 6 POST /tickets calls fails with HTTP 429. We retry immediately, up to 3 times, and some still fail. We create about 900 tickets in that window, plus the polling.\n\n2. On the same mornings our webhook endpoint stops receiving ticket.updated events for a while. Later in the day they start again. We are not sure if we lose events or if they are just late. Our endpoint is behind a load balancer and sometimes takes 12 to 15 seconds to respond during that peak, because it writes to our database before replying.\n\n3. Yesterday the webhook was disabled completely and two of our admins got an email about it. We re-enabled it but would like to understand why.\n\nWhat we have already checked: our API key is valid and has full permissions, our clock is in sync, and the 429 responses include a Retry-After header, which we currently ignore.\n\nQuestions:\n- What is the actual rate limit per account, and do bulk endpoints count differently?\n- How many times do you retry a webhook, and over what period?\n- Is there a timeout on your side for our webhook endpoint?\n- Is there anything we can change in our setup to stop the webhook being disabled?\n\nThis is affecting our operations every morning, so a quick answer would be much appreciated.\n\nBest regards,\nTony Saliba\nHead of Engineering, Saliba Logistics",
+      "body_html": "<div dir=\"ltr\"><p>Hello,</p><p>We run a logistics platform that syncs delivery exceptions into Helpdesk HQ through your API, and since Monday we are seeing a pattern of failures that I'd like help with.</p><p>Our integration does three things. Every 2 minutes it polls GET /tickets for tickets updated in the last 5 minutes. For every delivery exception from our warehouse system it creates a ticket with POST /tickets. And it listens for ticket.updated webhooks so that when an agent solves a ticket we can close the exception on our side.</p><p>What we see:</p><p>1. Between 08:00 and 10:00 our time, when our warehouses open, roughly 1 in 6 POST /tickets calls fails with HTTP 429. We retry immediately, up to 3 times, and some still fail. We create about 900 tickets in that window, plus the polling.</p><p>2. On the same mornings our webhook endpoint stops receiving ticket.updated events for a while. Later in the day they start again. We are not sure if we lose events or if they are just late. Our endpoint is behind a load balancer and sometimes takes 12 to 15 seconds to respond during that peak, because it writes to our database before replying.</p><p>3. Yesterday the webhook was disabled completely and two of our admins got an email about it. We re-enabled it but would like to understand why.</p><p>What we have already checked: our API key is valid and has full permissions, our clock is in sync, and the 429 responses include a Retry-After header, which we currently ignore.</p><p>Questions:<br>- What is the actual rate limit per account, and do bulk endpoints count differently?<br>- How many times do you retry a webhook, and over what period?<br>- Is there a timeout on your side for our webhook endpoint?<br>- Is there anything we can change in our setup to stop the webhook being disabled?</p><p>This is affecting our operations every morning, so a quick answer would be much appreciated.</p><p>Best regards,<br>Tony Saliba<br>Head of Engineering, Saliba Logistics</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T08:31:14.852Z",
+    "updated_at": "2026-10-20T08:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.760Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T08:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

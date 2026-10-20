@@ -1,0 +1,233 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "97a6681c-8faf-4047-afe6-528e6a28249a",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/97a6681c-8faf-4047-afe6-528e6a28249a",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1196",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1196,
+  "subject": "Question about invoice INV-2026-0520",
+  "status": "closed",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+    "name": "Omar Fares",
+    "email": "omar@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/9e1be4b2-8d1f-4e69-995b-47dbfe6841b5.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "63eb0783-23c6-4f03-a2de-d01ade15c261",
+    "code": "CUS-10024",
+    "legacy_number": 10024,
+    "name": "Priya Khoury",
+    "email": "priya.khoury@mail.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2025-11-08T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/63eb0783-23c6-4f03-a2de-d01ade15c261.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_63eb0783",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-08-05T14:00:00.000Z",
+    "resolution_due_at": "2026-08-11T14:00:00.000Z",
+    "first_response_at": "2026-08-06T06:28:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "b0ddbdc8-c34d-4890-b6a6-275205e7e16d",
+      "created_at": "2026-08-05T05:13:59.235Z",
+      "author": {
+        "type": "customer",
+        "id": "63eb0783-23c6-4f03-a2de-d01ade15c261",
+        "name": "Priya Khoury",
+        "email": "priya.khoury@mail.test"
+      },
+      "internal": false,
+      "body": "Our finance team needs our VAT number on invoice INV-2026-0520. Can this be added?",
+      "body_html": "<div dir=\"ltr\"><p>Our finance team needs our VAT number on invoice INV-2026-0520. Can this be added?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "92f60685-8de4-468e-9da3-b8ecb3644920",
+      "created_at": "2026-08-06T06:28:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Thanks Priya. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Priya. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "3181f35e-7b23-4106-879b-29c3d315d8d7",
+      "created_at": "2026-08-07T00:28:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "63eb0783-23c6-4f03-a2de-d01ade15c261",
+        "name": "Priya Khoury",
+        "email": "priya.khoury@mail.test"
+      },
+      "internal": false,
+      "body": "Thanks, I'll wait for your update.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks, I'll wait for your update.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "e6815e69-6501-48a8-ad99-9da5612a11dd",
+      "created_at": "2026-08-07T04:28:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Hi Priya, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Priya, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "9fba60e2-a2ad-4226-b682-ec10397bbb4c",
+      "created_at": "2026-08-07T13:28:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "63eb0783-23c6-4f03-a2de-d01ade15c261",
+        "name": "Priya Khoury",
+        "email": "priya.khoury@mail.test"
+      },
+      "internal": false,
+      "body": "That worked, thank you!",
+      "body_html": "<div dir=\"ltr\"><p>That worked, thank you!</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "0f01f1fc-2e93-49f4-b5f0-99e9917cfb3a",
+      "created_at": "2026-08-07T16:28:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "9e1be4b2-8d1f-4e69-995b-47dbfe6841b5",
+        "name": "Omar Fares",
+        "email": "omar@hq.test",
+        "role": "lead"
+      },
+      "internal": false,
+      "body": "Hi Priya, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Priya, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-08-05T05:13:59.235Z",
+    "updated_at": "2026-08-10T13:53:00.000Z",
+    "solved_at": "2026-08-10T13:53:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.852Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-08-05T05:13:59.235Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-08-05T05:13:59.235Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-08-05T05:13:59.235Z",
+      "actor": "system",
+      "to": "Omar Fares"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-08-06T06:28:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-08-10T13:53:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

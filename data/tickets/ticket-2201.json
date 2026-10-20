@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "1d591eb0-5b0c-4fb6-9a0b-0bb9799ec42d",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/1d591eb0-5b0c-4fb6-9a0b-0bb9799ec42d",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2201",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2201,
+  "subject": "Empty CSV from Reports",
+  "status": "new",
+  "channel": "chat",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "6d40902b-2326-47bd-84d5-40bce749a4ec",
+    "code": "CUS-10483",
+    "legacy_number": 10483,
+    "name": "Fadi Rizk",
+    "email": "fadi@rizk-group.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2026-07-11T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/6d40902b-2326-47bd-84d5-40bce749a4ec.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_6d40902b",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-10-21T07:00:00.000Z",
+    "resolution_due_at": "2026-10-21T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "82bb8b69-552d-4918-a2d5-e892fa4b74af",
+      "created_at": "2026-10-20T14:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "6d40902b-2326-47bd-84d5-40bce749a4ec",
+        "name": "Fadi Rizk",
+        "email": "fadi@rizk-group.test"
+      },
+      "internal": false,
+      "body": "CSV export from Reports is empty for all our dashboards since this morning.",
+      "body_html": "<div dir=\"ltr\"><p>CSV export from Reports is empty for all our dashboards since this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T14:31:14.852Z",
+    "updated_at": "2026-10-20T14:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.776Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T14:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

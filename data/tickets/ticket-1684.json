@@ -1,0 +1,143 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "a723af06-68ec-49c9-8a59-05ffecd9e889",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/a723af06-68ec-49c9-8a59-05ffecd9e889",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1684",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1684,
+  "subject": "Scheduled report not delivered",
+  "status": "closed",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "25be49e7-0977-4c1b-9fd7-0e087a89daff",
+    "name": "Reports"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+    "name": "Tarek Aoun",
+    "email": "tarek@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a32b5150-9376-4ec7-ad8d-e729c368f7dd.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "07cd2f12-b396-435e-b168-be5001ee92e4",
+    "code": "CUS-10233",
+    "legacy_number": 10233,
+    "name": "Hassan Sleiman",
+    "email": "hassan.sleiman@example.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2026-05-13T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/07cd2f12-b396-435e-b168-be5001ee92e4.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_07cd2f12",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-09-11T07:00:00.000Z",
+    "resolution_due_at": "2026-09-11T14:00:00.000Z",
+    "first_response_at": "2026-09-11T06:08:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "09b81f03-5427-4fa2-9226-25b7e0ae7ea1",
+      "created_at": "2026-09-11T03:01:39.509Z",
+      "author": {
+        "type": "customer",
+        "id": "07cd2f12-b396-435e-b168-be5001ee92e4",
+        "name": "Hassan Sleiman",
+        "email": "hassan.sleiman@example.test"
+      },
+      "internal": false,
+      "body": "The first response time report says 3 hours but when I check the tickets it looks closer to 1 hour.",
+      "body_html": "<div dir=\"ltr\"><p>The first response time report says 3 hours but when I check the tickets it looks closer to 1 hour.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "83bbfb9e-6581-4452-bf0f-d80362af581f",
+      "created_at": "2026-09-11T06:08:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Hassan, I've checked this and it's now fixed on our side. Could you try again and let me know?",
+      "body_html": "<div dir=\"ltr\"><p>Hi Hassan, I've checked this and it's now fixed on our side. Could you try again and let me know?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 2,
+    "created_at": "2026-09-11T03:01:39.509Z",
+    "updated_at": "2026-09-11T08:02:00.000Z",
+    "solved_at": "2026-09-11T08:02:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.873Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-09-11T03:01:39.509Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-09-11T03:01:39.509Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-09-11T03:01:39.509Z",
+      "actor": "system",
+      "to": "Tarek Aoun"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-09-11T06:08:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-09-11T08:02:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

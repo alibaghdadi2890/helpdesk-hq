@@ -1,0 +1,188 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "d91fffa4-3b87-4b30-aca6-02f2828d3b17",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/d91fffa4-3b87-4b30-aca6-02f2828d3b17",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1379",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1379,
+  "subject": "Article not showing in help centre search",
+  "status": "closed",
+  "channel": "chat",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "38c77470-d564-40a1-acac-098787790b0b",
+    "name": "Knowledge Base"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+    "name": "Tarek Aoun",
+    "email": "tarek@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a32b5150-9376-4ec7-ad8d-e729c368f7dd.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "9977f2a2-6ea6-42c5-bea3-0dec2b81694b",
+    "code": "CUS-10204",
+    "legacy_number": 10204,
+    "name": "Marc Sabbagh",
+    "email": "marc.sabbagh@inbox.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-03-03T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/9977f2a2-6ea6-42c5-bea3-0dec2b81694b.png",
+    "ticket_count": 5,
+    "custom_fields": {
+      "crm_id": "crm_9977f2a2",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-08-19T14:00:00.000Z",
+    "resolution_due_at": "2026-08-25T14:00:00.000Z",
+    "first_response_at": "2026-08-19T09:37:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "983f6646-3359-4a8e-bff7-e61f86270eb8",
+      "created_at": "2026-08-18T23:19:44.441Z",
+      "author": {
+        "type": "customer",
+        "id": "9977f2a2-6ea6-42c5-bea3-0dec2b81694b",
+        "name": "Marc Sabbagh",
+        "email": "marc.sabbagh@inbox.test"
+      },
+      "internal": false,
+      "body": "Our customers write in Arabic and English. Can the help centre show both languages?",
+      "body_html": "<div dir=\"ltr\"><p>Our customers write in Arabic and English. Can the help centre show both languages?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "cdc4068d-28bb-47ee-800e-334c2bdec384",
+      "created_at": "2026-08-19T09:37:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks for your patience, Marc. I've passed this to our technical team and will update you as soon as I hear back.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks for your patience, Marc. I've passed this to our technical team and will update you as soon as I hear back.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "ee5b6402-1a5e-4780-a544-0b0c56780d07",
+      "created_at": "2026-08-19T12:37:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "9977f2a2-6ea6-42c5-bea3-0dec2b81694b",
+        "name": "Marc Sabbagh",
+        "email": "marc.sabbagh@inbox.test"
+      },
+      "internal": false,
+      "body": "It's still happening this morning.",
+      "body_html": "<div dir=\"ltr\"><p>It's still happening this morning.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "3d676581-f343-41e2-854f-cb2856be3602",
+      "created_at": "2026-08-19T16:37:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Marc. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Marc. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 4,
+    "created_at": "2026-08-18T23:19:44.441Z",
+    "updated_at": "2026-08-25T10:23:00.000Z",
+    "solved_at": "2026-08-25T10:23:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.860Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-08-18T23:19:44.441Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-08-18T23:19:44.441Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-08-18T23:19:44.441Z",
+      "actor": "system",
+      "to": "Tarek Aoun"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-08-19T09:37:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-08-25T10:23:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "4594fa96-d8d5-4f6c-a40a-09cb117f60f8",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/4594fa96-d8d5-4f6c-a40a-09cb117f60f8",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1257",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1257,
+  "subject": "Article not showing in help centre search",
+  "status": "closed",
+  "channel": "chat",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "38c77470-d564-40a1-acac-098787790b0b",
+    "name": "Knowledge Base"
+  },
+  "team": {
+    "id": "3ff48dea-9c47-48a8-8ffc-4aad6e5e658d",
+    "name": "Technical"
+  },
+  "assignee": {
+    "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+    "name": "Tarek Aoun",
+    "email": "tarek@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/a32b5150-9376-4ec7-ad8d-e729c368f7dd.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "0aaae743-0830-4957-a1a1-20132b0d6d10",
+    "code": "CUS-10011",
+    "legacy_number": 10011,
+    "name": "Elie Farah",
+    "email": "elie.farah@example.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-06-12T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/0aaae743-0830-4957-a1a1-20132b0d6d10.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_0aaae743",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-08-10T14:00:00.000Z",
+    "resolution_due_at": "2026-08-14T14:00:00.000Z",
+    "first_response_at": "2026-08-10T07:46:00.000Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "747cdf1d-9dec-4caa-a419-35fac154c50d",
+      "created_at": "2026-08-09T19:32:04.167Z",
+      "author": {
+        "type": "customer",
+        "id": "0aaae743-0830-4957-a1a1-20132b0d6d10",
+        "name": "Elie Farah",
+        "email": "elie.farah@example.test"
+      },
+      "internal": false,
+      "body": "We published an article yesterday but searching for its title on our help centre finds nothing.",
+      "body_html": "<div dir=\"ltr\"><p>We published an article yesterday but searching for its title on our help centre finds nothing.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "b6b2136b-eb15-43b4-8bec-dc18dcb12c11",
+      "created_at": "2026-08-10T07:46:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Elie. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Elie. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "bd32a4f2-5fad-4d3b-84d8-cfad5a186f5b",
+      "created_at": "2026-08-10T07:51:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": true,
+      "body": "Escalated to engineering in the internal tracker.",
+      "body_html": "<div dir=\"ltr\"><p>Escalated to engineering in the internal tracker.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "d47c5924-b0f6-4ae2-b66a-75845a12c842",
+      "created_at": "2026-08-10T21:46:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "0aaae743-0830-4957-a1a1-20132b0d6d10",
+        "name": "Elie Farah",
+        "email": "elie.farah@example.test"
+      },
+      "internal": false,
+      "body": "Any news on this?",
+      "body_html": "<div dir=\"ltr\"><p>Any news on this?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "bdd79e53-96ed-4311-9c3f-2aecea65af8c",
+      "created_at": "2026-08-10T22:46:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Thanks Elie. Could you send a screenshot and the approximate time this happened? That will help us trace it.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks Elie. Could you send a screenshot and the approximate time this happened? That will help us trace it.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "6feb8e97-fc48-47ed-a500-2703ef2d580e",
+      "created_at": "2026-08-11T00:46:00.000Z",
+      "author": {
+        "type": "customer",
+        "id": "0aaae743-0830-4957-a1a1-20132b0d6d10",
+        "name": "Elie Farah",
+        "email": "elie.farah@example.test"
+      },
+      "internal": false,
+      "body": "Thanks, I'll wait for your update.",
+      "body_html": "<div dir=\"ltr\"><p>Thanks, I'll wait for your update.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "chat",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "c5c05444-66ab-4581-b427-f90404251f6d",
+      "created_at": "2026-08-11T01:46:00.000Z",
+      "author": {
+        "type": "agent",
+        "id": "a32b5150-9376-4ec7-ad8d-e729c368f7dd",
+        "name": "Tarek Aoun",
+        "email": "tarek@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Elie, thanks for reaching out. I'm looking into this now and will update you shortly.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Elie, thanks for reaching out. I'm looking into this now and will update you shortly.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 7,
+    "created_at": "2026-08-09T19:32:04.167Z",
+    "updated_at": "2026-08-11T12:31:00.000Z",
+    "solved_at": "2026-08-11T12:31:00.000Z",
+    "exported_at": "2026-10-20T16:31:16.855Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-08-09T19:32:04.167Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-08-09T19:32:04.167Z",
+      "actor": "system",
+      "to": "Technical"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-08-09T19:32:04.167Z",
+      "actor": "system",
+      "to": "Tarek Aoun"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-08-10T07:46:00.000Z",
+      "actor": "agent"
+    },
+    {
+      "event": "ticket.solved",
+      "at": "2026-08-11T12:31:00.000Z",
+      "actor": "agent"
+    }
+  ]
+}

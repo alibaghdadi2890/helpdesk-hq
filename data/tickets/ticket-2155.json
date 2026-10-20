@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "d63ab69d-3a03-4d65-a558-0d0520f03984",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/d63ab69d-3a03-4d65-a558-0d0520f03984",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2155",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2155,
+  "subject": "API keeps returning 429 Too Many Requests",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "ae49e76d-a578-4291-ac69-d692f2ab98ae",
+    "name": "API"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "81e8a128-f533-4658-b17b-20436eea6a3e",
+    "code": "CUS-10506",
+    "legacy_number": 10506,
+    "name": "Elie Chami",
+    "email": "elie@chami-tech.test",
+    "language": "en",
+    "plan": "enterprise",
+    "created_at": "2025-11-06T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/81e8a128-f533-4658-b17b-20436eea6a3e.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_81e8a128",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Enterprise",
+    "first_response_mins": 60,
+    "resolution_mins": 480,
+    "first_response_due_at": "2026-10-20T07:00:00.000Z",
+    "resolution_due_at": "2026-10-20T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "e5008691-e0dd-4397-9822-636a846c1477",
+      "created_at": "2026-10-20T01:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "81e8a128-f533-4658-b17b-20436eea6a3e",
+        "name": "Elie Chami",
+        "email": "elie@chami-tech.test"
+      },
+      "internal": false,
+      "body": "Our nightly sync job gets HTTP 429 responses after a few minutes. What are your limits and how should we handle this?",
+      "body_html": "<div dir=\"ltr\"><p>Our nightly sync job gets HTTP 429 responses after a few minutes. What are your limits and how should we handle this?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T01:31:14.852Z",
+    "updated_at": "2026-10-20T01:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.800Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T01:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

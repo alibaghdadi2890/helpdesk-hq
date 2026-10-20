@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "1a2c68de-ad98-4c14-bbba-13438834ecb6",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/1a2c68de-ad98-4c14-bbba-13438834ecb6",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2153",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2153,
+  "subject": "Charged when upgrading mid-month?",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "3c4023ff-55eb-4529-abcd-bb3463f28d5e",
+    "code": "CUS-10504",
+    "legacy_number": 10504,
+    "name": "Walid Aziz",
+    "email": "walid@aziz-motors.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-01-04T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/3c4023ff-55eb-4529-abcd-bb3463f28d5e.png",
+    "ticket_count": 6,
+    "custom_fields": {
+      "crm_id": "crm_3c4023ff",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-20T08:00:00.000Z",
+    "resolution_due_at": "2026-10-21T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "950098fe-f260-4885-b4ed-b54d63ad194e",
+      "created_at": "2026-10-19T23:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "3c4023ff-55eb-4529-abcd-bb3463f28d5e",
+        "name": "Walid Aziz",
+        "email": "walid@aziz-motors.test"
+      },
+      "internal": false,
+      "body": "If we upgrade from Standard to Enterprise today, halfway through our billing month, what will we be charged and when do we get the new features?",
+      "body_html": "<div dir=\"ltr\"><p>If we upgrade from Standard to Enterprise today, halfway through our billing month, what will we be charged and when do we get the new features?</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-19T23:31:14.852Z",
+    "updated_at": "2026-10-19T23:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.793Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-19T23:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

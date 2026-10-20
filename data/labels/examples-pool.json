@@ -1,0 +1,22 @@
+[
+  { "id": "X01", "text": "I was charged twice for March. Invoice INV-2026-0031.", "expected": { "category": "billing", "urgency": "high", "product": "Billing Portal", "sentiment": "negative" } },
+  { "id": "X02", "text": "How do I export last month's report as CSV?", "expected": { "category": "how_to", "urgency": "low", "product": "Reports", "sentiment": "neutral" } },
+  { "id": "X03", "text": "The Inbox won't load at all for anyone on our team. Production is down.", "expected": { "category": "bug", "urgency": "urgent", "product": "Inbox", "sentiment": "negative" } },
+  { "id": "X04", "text": "Please add WhatsApp as a channel. Most of our customers use it.", "expected": { "category": "feature_request", "urgency": "low", "product": "Inbox", "sentiment": "neutral" } },
+  { "id": "X05", "text": "My account is locked after too many sign-in attempts.", "expected": { "category": "account", "urgency": "high", "product": "Inbox", "sentiment": "negative" } },
+  { "id": "X06", "text": "What does error code 422 from the API mean?", "expected": { "category": "how_to", "urgency": "low", "product": "API", "sentiment": "neutral" } },
+  { "id": "X07", "text": "Love the new mobile app design. Much faster now.", "expected": { "category": "other", "urgency": "low", "product": "Mobile App", "sentiment": "positive" } },
+  { "id": "X08", "text": "We need to change the card used for our subscription.", "expected": { "category": "billing", "urgency": "low", "product": "Billing Portal", "sentiment": "neutral" } },
+  { "id": "X09", "text": "Articles we unpublished still appear on the help centre.", "expected": { "category": "bug", "urgency": "normal", "product": "Knowledge Base", "sentiment": "negative" } },
+  { "id": "X10", "text": "Can we restrict which agents see billing tickets?", "expected": { "category": "account", "urgency": "low", "product": "Inbox", "sentiment": "neutral" } },
+  { "id": "X11", "text": "Webhooks arrive twice for the same ticket update.", "expected": { "category": "bug", "urgency": "normal", "product": "API", "sentiment": "negative" } },
+  { "id": "X12", "text": "It would be helpful to have SLA reports per customer, not just per team.", "expected": { "category": "feature_request", "urgency": "low", "product": "Reports", "sentiment": "neutral" } },
+  { "id": "X13", "text": "Our VAT number is wrong on every invoice and our auditors are asking.", "expected": { "category": "billing", "urgency": "normal", "product": "Billing Portal", "sentiment": "negative" } },
+  { "id": "X14", "text": "How do I translate an article into Arabic?", "expected": { "category": "how_to", "urgency": "low", "product": "Knowledge Base", "sentiment": "neutral" } },
+  { "id": "X15", "text": "Push notifications stopped completely after the last iOS update.", "expected": { "category": "bug", "urgency": "normal", "product": "Mobile App", "sentiment": "negative" } },
+  { "id": "X16", "text": "We need SSO for our 300 agents before we can roll out.", "expected": { "category": "account", "urgency": "normal", "product": "Inbox", "sentiment": "neutral" } },
+  { "id": "X17", "text": "Your support has been great this month, thank you all.", "expected": { "category": "other", "urgency": "low", "product": "unknown", "sentiment": "positive" } },
+  { "id": "X18", "text": "Dashboards show yesterday's numbers only after noon. Can that be faster?", "expected": { "category": "feature_request", "urgency": "low", "product": "Reports", "sentiment": "neutral" } },
+  { "id": "X19", "text": "Every API call has returned 503 for the last 20 minutes.", "expected": { "category": "bug", "urgency": "urgent", "product": "API", "sentiment": "negative" } },
+  { "id": "X20", "text": "Can I get a receipt for last year's payments in one PDF?", "expected": { "category": "billing", "urgency": "low", "product": "Billing Portal", "sentiment": "neutral" } }
+]

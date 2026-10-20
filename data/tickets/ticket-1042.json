@@ -1,0 +1,226 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "f2b7ff31-b2ce-468e-b3fc-eeb7e319dcaa",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/f2b7ff31-b2ce-468e-b3fc-eeb7e319dcaa",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/1042",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 1042,
+  "subject": "Charged twice for invoice INV-2026-0041",
+  "status": "open",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "fcfc21f0-7dac-4d7e-a425-b02395af6cb0",
+    "name": "Billing Portal"
+  },
+  "team": {
+    "id": "681d053b-91fc-4c8c-8211-04aa8f0654d8",
+    "name": "Billing"
+  },
+  "assignee": {
+    "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+    "name": "Lina Saab",
+    "email": "lina@hq.test",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/7c570089-3a34-4d83-841a-abe1f6f21057.png"
+  },
+  "customer": {
+    "object": "customer",
+    "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+    "code": "CUS-10442",
+    "legacy_number": 10442,
+    "name": "Sara Haddad",
+    "email": "sara.haddad@brightlane.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-02-01T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/889f8a8e-e13e-4b87-955a-de3978b96f36.png",
+    "ticket_count": 7,
+    "custom_fields": {
+      "crm_id": "crm_889f8a8e",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-19T12:31:14.852Z",
+    "resolution_due_at": "2026-10-21T10:31:14.852Z",
+    "first_response_at": "2026-10-19T12:06:14.852Z",
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "348fdb6f-ff2c-4aff-99b6-93c7af9b0515",
+      "created_at": "2026-10-19T10:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+        "name": "Sara Haddad",
+        "email": "sara.haddad@brightlane.test"
+      },
+      "internal": false,
+      "body": "Hi, my invoice INV-2026-0041 was charged twice on my Visa this morning, two payments of USD 348 a few minutes apart. Please refund one.",
+      "body_html": "<div dir=\"ltr\"><p>Hi, my invoice INV-2026-0041 was charged twice on my Visa this morning, two payments of USD 348 a few minutes apart. Please refund one.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "6b08ef9f-fb7b-419c-b3e7-2e75de2690f2",
+      "created_at": "2026-10-19T12:06:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": false,
+      "body": "Hi Sara, thanks for flagging this, and sorry for the trouble. Could you confirm the last four digits of the card and the time of both charges? Please don't send the full card number.",
+      "body_html": "<div dir=\"ltr\"><p>Hi Sara, thanks for flagging this, and sorry for the trouble. Could you confirm the last four digits of the card and the time of both charges? Please don't send the full card number.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "526f8939-9535-4691-9660-b2c3b95c91e1",
+      "created_at": "2026-10-19T12:12:14.852Z",
+      "author": {
+        "type": "agent",
+        "id": "7c570089-3a34-4d83-841a-abe1f6f21057",
+        "name": "Lina Saab",
+        "email": "lina@hq.test",
+        "role": "agent"
+      },
+      "internal": true,
+      "body": "Customer is on the refund watchlist after two chargebacks last year. Check with finance before promising anything beyond the standard policy.",
+      "body_html": "<div dir=\"ltr\"><p>Customer is on the refund watchlist after two chargebacks last year. Check with finance before promising anything beyond the standard policy.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "441e2670-dce9-4a2c-98a9-490c1b0ff123",
+      "created_at": "2026-10-19T14:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+        "name": "Sara Haddad",
+        "email": "sara.haddad@brightlane.test"
+      },
+      "internal": false,
+      "body": "The card ends in 4417. Both charges were at 08:12 and 08:14 Beirut time, same amount.",
+      "body_html": "<div dir=\"ltr\"><p>The card ends in 4417. Both charges were at 08:12 and 08:14 Beirut time, same amount.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "31a026c9-0b2c-4849-bc26-74bbfe081fe0",
+      "created_at": "2026-10-19T14:41:14.852Z",
+      "author": {
+        "type": "system",
+        "id": null,
+        "name": "Helpdesk HQ"
+      },
+      "internal": false,
+      "body": "Payment provider reference PSP-88213 attached to this ticket.",
+      "body_html": "<div dir=\"ltr\"><p>Payment provider reference PSP-88213 attached to this ticket.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    },
+    {
+      "object": "message",
+      "id": "5067555c-b797-48d5-a2b0-95596bcdf6ac",
+      "created_at": "2026-10-20T11:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "889f8a8e-e13e-4b87-955a-de3978b96f36",
+        "name": "Sara Haddad",
+        "email": "sara.haddad@brightlane.test"
+      },
+      "internal": false,
+      "body": "Any update? I still see both charges on my statement and our accountant is asking.",
+      "body_html": "<div dir=\"ltr\"><p>Any update? I still see both charges on my statement and our accountant is asking.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 6,
+    "created_at": "2026-10-19T10:31:14.852Z",
+    "updated_at": "2026-10-20T11:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.750Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-19T10:31:14.852Z",
+      "actor": "customer"
+    },
+    {
+      "event": "ticket.team_changed",
+      "at": "2026-10-19T10:31:14.852Z",
+      "actor": "system",
+      "to": "Billing"
+    },
+    {
+      "event": "ticket.assigned",
+      "at": "2026-10-19T10:31:14.852Z",
+      "actor": "system",
+      "to": "Lina Saab"
+    },
+    {
+      "event": "ticket.first_response",
+      "at": "2026-10-19T12:06:14.852Z",
+      "actor": "agent"
+    }
+  ]
+}

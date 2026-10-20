@@ -1,0 +1,87 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "915e5b79-c5a6-4ec2-bb47-47821098e096",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/915e5b79-c5a6-4ec2-bb47-47821098e096",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2161",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2161,
+  "subject": "Formal complaint about data handling",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": null,
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "fc7021c8-0cbb-4abe-ac68-fc9372ef9f42",
+    "code": "CUS-10512",
+    "legacy_number": 10512,
+    "name": "Ibrahim Qasim",
+    "email": "ibrahim@qasim-trading.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-04-02T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/fc7021c8-0cbb-4abe-ac68-fc9372ef9f42.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_fc7021c8",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T07:31:14.852Z",
+    "resolution_due_at": "2026-10-27T07:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "a5c0586a-a880-47dc-b73a-a4a5df1eff1a",
+      "created_at": "2026-10-20T07:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "fc7021c8-0cbb-4abe-ac68-fc9372ef9f42",
+        "name": "Ibrahim Qasim",
+        "email": "ibrahim@qasim-trading.test"
+      },
+      "internal": false,
+      "body": "You sent our customer list to the wrong company in an export email. I have informed my lawyer and I am reporting this to the data protection authority unless I hear from a manager today.",
+      "body_html": "<div dir=\"ltr\"><p>You sent our customer list to the wrong company in an export email. I have informed my lawyer and I am reporting this to the data protection authority unless I hear from a manager today.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T07:31:14.852Z",
+    "updated_at": "2026-10-20T07:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.819Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T07:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

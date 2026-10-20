@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "81e7c62b-4f28-4e02-bff9-5c6ed2d2fcb4",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/81e7c62b-4f28-4e02-bff9-5c6ed2d2fcb4",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2168",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2168,
+  "subject": "New emails not appearing in Inbox",
+  "status": "new",
+  "channel": "email",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "ec308a7c-1d62-4fab-a604-c3aba2e8dc3d",
+    "code": "CUS-10520",
+    "legacy_number": 10520,
+    "name": "Aya Rashid",
+    "email": "aya@rashid-clinic.test",
+    "language": "en",
+    "plan": "priority",
+    "created_at": "2026-01-15T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/ec308a7c-1d62-4fab-a604-c3aba2e8dc3d.png",
+    "ticket_count": 4,
+    "custom_fields": {
+      "crm_id": "crm_ec308a7c",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Priority",
+    "first_response_mins": 120,
+    "resolution_mins": 960,
+    "first_response_due_at": "2026-10-21T08:00:00.000Z",
+    "resolution_due_at": "2026-10-22T14:00:00.000Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "9867ef74-2ffa-43d3-83a0-712bd7c258f0",
+      "created_at": "2026-10-20T14:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "ec308a7c-1d62-4fab-a604-c3aba2e8dc3d",
+        "name": "Aya Rashid",
+        "email": "aya@rashid-clinic.test"
+      },
+      "internal": false,
+      "body": "Since we changed email providers yesterday, no new emails are showing up as tickets.",
+      "body_html": "<div dir=\"ltr\"><p>Since we changed email providers yesterday, no new emails are showing up as tickets.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "email",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T14:31:14.852Z",
+    "updated_at": "2026-10-20T14:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.840Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T14:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "object": "ticket",
+  "api_version": "2026-09-01",
+  "id": "bc222f85-b811-4d4e-bbda-ddb2b1e22556",
+  "url": "https://api.helpdesk-hq.test/v1/tickets/bc222f85-b811-4d4e-bbda-ddb2b1e22556",
+  "html_url": "https://hq.helpdesk-hq.test/agent/tickets/2166",
+  "tenant": {
+    "id": "97da2849-d73e-4438-a907-d090402c802d",
+    "slug": "hq",
+    "name": "Helpdesk HQ"
+  },
+  "number": 2166,
+  "subject": "Suggestion: bulk edit tags",
+  "status": "new",
+  "channel": "web",
+  "language": "en",
+  "priority": null,
+  "tags": [],
+  "product": {
+    "id": "e8b0f940-5bc4-472a-83d1-2f37897a2fd5",
+    "name": "Inbox"
+  },
+  "team": null,
+  "assignee": null,
+  "customer": {
+    "object": "customer",
+    "id": "52ee0e54-ce8e-4dfb-bce8-841df0b98a2a",
+    "code": "CUS-10517",
+    "legacy_number": 10517,
+    "name": "Salma Menon",
+    "email": "salma@menon-learning.test",
+    "language": "en",
+    "plan": "standard",
+    "created_at": "2026-04-15T16:31:14.852Z",
+    "avatar_url": "https://cdn.helpdesk-hq.test/avatars/52ee0e54-ce8e-4dfb-bce8-841df0b98a2a.png",
+    "ticket_count": 2,
+    "custom_fields": {
+      "crm_id": "crm_52ee0e54",
+      "marketing_opt_in": false,
+      "timezone": null
+    }
+  },
+  "sla": {
+    "policy": "Standard",
+    "first_response_mins": 480,
+    "resolution_mins": 2400,
+    "first_response_due_at": "2026-10-21T12:31:14.852Z",
+    "resolution_due_at": "2026-10-27T12:31:14.852Z",
+    "first_response_at": null,
+    "pending_since": null
+  },
+  "messages": [
+    {
+      "object": "message",
+      "id": "8b3483a2-7af3-46c0-8be6-d6abcecc4f07",
+      "created_at": "2026-10-20T12:31:14.852Z",
+      "author": {
+        "type": "customer",
+        "id": "52ee0e54-ce8e-4dfb-bce8-841df0b98a2a",
+        "name": "Salma Menon",
+        "email": "salma@menon-learning.test"
+      },
+      "internal": false,
+      "body": "It would save us hours if we could add or remove a tag on many tickets at once.",
+      "body_html": "<div dir=\"ltr\"><p>It would save us hours if we could add or remove a tag on many tickets at once.</p></div>",
+      "attachments": [],
+      "via": {
+        "channel": "web",
+        "source": {
+          "ip": null,
+          "user_agent": null
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "message_count": 1,
+    "created_at": "2026-10-20T12:31:14.852Z",
+    "updated_at": "2026-10-20T12:31:14.852Z",
+    "solved_at": null,
+    "exported_at": "2026-10-20T16:31:16.834Z"
+  },
+  "audit": [
+    {
+      "event": "ticket.created",
+      "at": "2026-10-20T12:31:14.852Z",
+      "actor": "customer"
+    }
+  ]
+}
