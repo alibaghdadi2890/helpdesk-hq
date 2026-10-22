@@ -2,7 +2,7 @@
 -include .env
 export
 
-.PHONY: up down db-migrate db-seed db-reset test typecheck dev build psql hello export-tickets close-solved
+.PHONY: up down db-migrate db-seed db-reset test typecheck dev build psql psql-app hello export-tickets close-solved
 
 up:            ## Start PostgreSQL and Phoenix, and wait until the database is ready
 	docker compose up -d --wait
@@ -32,7 +32,12 @@ build:
 	npm run build
 
 psql:          ## Open psql as the table owner (sees every tenant)
-	docker compose exec db psql -U helpdesk helpdesk
+	@if command -v psql >/dev/null 2>&1; then psql "$(MIGRATION_DATABASE_URL)"; \
+	else docker compose exec db psql -U helpdesk helpdesk; fi
+
+psql-app:      ## Open psql as helpdesk_app, the role the API uses (row-level security applies)
+	@if command -v psql >/dev/null 2>&1; then psql "$(DATABASE_URL)"; \
+	else docker compose exec -e PGPASSWORD=helpdesk_app db psql -h localhost -U helpdesk_app helpdesk; fi
 
 hello:         ## Exercise 0.4
 	npm run hello

@@ -125,7 +125,8 @@ Migrations, the seed and `export-tickets` run as the table owner and see every t
 | `make hello` | Run Exercise 0.4 with `.env` loaded |
 | `make export-tickets` | Regenerate `data/tickets/` |
 | `make close-solved` | Run the close-solved job |
-| `make psql` | psql as the table owner |
+| `make psql` | psql as the table owner (sees every tenant) |
+| `make psql-app` | psql as `helpdesk_app`, with row-level security |
 
 ## Secrets
 
