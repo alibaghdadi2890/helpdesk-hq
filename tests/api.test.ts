@@ -101,6 +101,56 @@ describe("tickets", () => {
     expect(p.errors.map((e: { field: string }) => e.field)).toEqual(expect.arrayContaining(["subject", "channel", "customerEmail"]));
   });
 
+  it("defaults priority to normal and accepts one on create", async () => {
+    const plain = await (await createTicket(json("POST", "/tickets", {
+      subject: "Question about seats", body: "How many seats do we have?", customerEmail: "seats@api-test.test", channel: "web",
+    }, lina), undefined)).json();
+    expect(plain.priority).toBe("normal");
+
+    const res = await createTicket(json("POST", "/tickets", {
+      subject: "Checkout is down", body: "Nobody can pay.", customerEmail: "outage@api-test.test", channel: "chat", priority: "urgent",
+    }, lina), undefined);
+    expect(res.status).toBe(201);
+    const t = await res.json();
+    expect(t.priority).toBe("urgent");
+    const id = String(t.number);
+    expect((await (await getTicket(get(`/tickets/${id}`, lina), params({ id }))).json()).priority).toBe("urgent");
+  });
+
+  it("rejects an unknown priority on create and in the filter", async () => {
+    const res = await createTicket(json("POST", "/tickets", {
+      subject: "x", body: "y", customerEmail: "bad.priority@api-test.test", channel: "web", priority: "critical",
+    }, lina), undefined);
+    expect(res.status).toBe(400);
+    expect((await res.json()).errors.map((e: { field: string }) => e.field)).toContain("priority");
+    expect((await listTickets(get("/tickets?priority=critical", lina), undefined)).status).toBe(400);
+  });
+
+  it("changes priority with PATCH and filters by it", async () => {
+    const created = await (await createTicket(json("POST", "/tickets", {
+      subject: "Priority filter check", body: "Please look at this.", customerEmail: "priority.filter@api-test.test", channel: "email",
+    }, lina), undefined)).json();
+    const id = String(created.number);
+
+    const res = await patchTicket(json("PATCH", `/tickets/${id}`, { priority: "high" }, lina), params({ id }));
+    expect(res.status).toBe(200);
+    const patched = await res.json();
+    expect(patched.priority).toBe("high");
+    expect(patched.status).toBe("new"); // nothing else changes
+
+    const high = await (await listTickets(get("/tickets?priority=high&q=Priority%20filter%20check", lina), undefined)).json();
+    expect(high.items.map((t: { number: number }) => t.number)).toContain(created.number);
+    for (const t of high.items) expect(t.priority).toBe("high");
+
+    const low = await (await listTickets(get("/tickets?priority=low,normal&q=Priority%20filter%20check", lina), undefined)).json();
+    expect(low.items.map((t: { number: number }) => t.number)).not.toContain(created.number);
+  });
+
+  it("rejects an unknown priority on PATCH", async () => {
+    const res = await patchTicket(json("PATCH", "/tickets/1105", { priority: "asap" }, lina), params({ id: "1105" }));
+    expect(res.status).toBe(400);
+  });
+
   it("refuses an invalid status change with 409", async () => {
     const res = await patchTicket(json("PATCH", "/tickets/1105", { status: "closed" }, lina), params({ id: "1105" }));
     expect(res.status).toBe(409);

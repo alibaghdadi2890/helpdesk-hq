@@ -7,17 +7,36 @@
 // - Print the reply, then one line: input tokens, output tokens, cost in dollars to six decimals.
 // - On an HTTP error, print the status code only and exit non-zero. Never print request
 //   headers: they contain your key.
+import { messages } from "@/db/schema";
 import "../env";
 import { readFileSync } from "node:fs";
 
-const ticket = JSON.parse(readFileSync("data/tickets/ticket-1042.json", "utf8"));
+const ticket = JSON.parse(readFileSync("data/tickets/ticket-1042.json", "utf8"))
+  .messages.map((m: { body: string }) => m.body)
+  .join("\n\n");
 
-// 1. Join ticket.messages[].body with "\n\n".
-// 2. POST to the Messages API with x-api-key, anthropic-version and a JSON body.
-//    (OpenAI-compatible provider? Use /v1/chat/completions and an Authorization header.)
-// 3. On !res.ok: console.error(`HTTP ${res.status}`) and process.exit(1).
-// 4. Read data.usage.input_tokens and data.usage.output_tokens.
-// 5. cost = (in * PRICE_IN_PER_MTOK + out * PRICE_OUT_PER_MTOK) / 1_000_000
-// 6. Print the reply text and the usage line: "812 in · 31 out · $0.002901"
+const res = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+        "content-type": "application/json",
+        "x-api-key": process.env.LLM_API_KEY ?? "",
+        "anthropic-version": "2023-06-01",
+    },
+    body: JSON.stringify({
+        model: process.env.LLM_MODEL,
+        max_tokens: 200,
+        messages: [{ role: "user", content: `Summarize this support ticket in one sentence: \n\n${ticket}`}],
+    })
+});
 
-console.log(`TODO: summarise ticket #${ticket.number} (${ticket.messages.length} messages). See the comments in scripts/ch00/hello.ts.`);
+if(!res.ok) {
+    console.error(`HTTP ${res.status}`);
+    process.exit(1);
+}
+
+const data = await res.json();
+const { input_tokens: inT, output_tokens: outT } = data.usage;
+const cost = (inT * Number(process.env.PRICE_IN_PER_MTOK) + outT * Number(process.env.PRICE_OUT_PER_MTOK)) / 1e6;
+
+console.log(data.content[1].text);
+console.log(`${inT} in · ${outT} out · $${cost.toFixed(6)}`);

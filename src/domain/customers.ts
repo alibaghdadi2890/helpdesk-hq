@@ -16,7 +16,7 @@ export async function getCustomer(tx: Tx, ref: string) {
   if (!c) throw notFound(`Customer ${ref}`);
 
   const recent = await tx.select({
-    number: tickets.number, subject: tickets.subject, status: tickets.status, createdAt: tickets.createdAt,
+    number: tickets.number, subject: tickets.subject, status: tickets.status, priority: tickets.priority, createdAt: tickets.createdAt,
   }).from(tickets).where(eq(tickets.customerId, c.id)).orderBy(desc(tickets.createdAt)).limit(5);
 
   return {

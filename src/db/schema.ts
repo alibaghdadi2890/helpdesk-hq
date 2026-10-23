@@ -69,6 +69,8 @@ export const slaPolicies = pgTable("sla_policies", {
 export const TICKET_STATUSES = ["new", "open", "pending", "solved", "closed"] as const;
 export type TicketStatus = (typeof TICKET_STATUSES)[number];
 export const CHANNELS = ["email", "web", "chat"] as const;
+export const TICKET_PRIORITIES = ["low", "normal", "high", "urgent"] as const;
+export type TicketPriority = (typeof TICKET_PRIORITIES)[number];
 
 export const tickets = pgTable("tickets", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -76,6 +78,7 @@ export const tickets = pgTable("tickets", {
   number: integer("number").notNull(),
   subject: text("subject").notNull(),
   status: text("status", { enum: TICKET_STATUSES }).notNull().default("new"),
+  priority: text("priority", { enum: TICKET_PRIORITIES }).notNull().default("normal"),
   channel: text("channel", { enum: CHANNELS }).notNull(),
   language: text("language").notNull().default("en"),
   customerId: uuid("customer_id").notNull(),

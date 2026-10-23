@@ -1,6 +1,6 @@
 import { and, asc, count, desc, eq, ilike, inArray, type SQL } from "drizzle-orm";
 import { z } from "zod";
-import { CHANNELS, customers, messages, products, slaPolicies, teams, tenants, TICKET_STATUSES, tickets, users, type TicketStatus } from "@/db/schema";
+import { CHANNELS, customers, messages, products, slaPolicies, teams, tenants, TICKET_PRIORITIES, TICKET_STATUSES, tickets, users, type TicketStatus } from "@/db/schema";
 import { getDb, type Tx } from "@/db/client";
 import { withTenant } from "@/db/tenant";
 import { badRequest, notFound } from "./errors";
@@ -22,6 +22,8 @@ export function ticketRef(ref: string): SQL {
 export const ListTicketsQuery = z.object({
   status: z.string().optional().transform((s) => (s ? s.split(",") : undefined))
     .pipe(z.array(z.enum(TICKET_STATUSES)).optional()),
+  priority: z.string().optional().transform((s) => (s ? s.split(",") : undefined))
+    .pipe(z.array(z.enum(TICKET_PRIORITIES)).optional()),
   team: z.uuid().optional(),
   assignee: z.uuid().optional(),
   customer: z.uuid().optional(),
@@ -34,6 +36,7 @@ export type ListTicketsQuery = z.infer<typeof ListTicketsQuery>;
 export async function listTickets(tx: Tx, f: ListTicketsQuery) {
   const where = and(
     f.status ? inArray(tickets.status, f.status) : undefined,
+    f.priority ? inArray(tickets.priority, f.priority) : undefined,
     f.team ? eq(tickets.teamId, f.team) : undefined,
     f.assignee ? eq(tickets.assigneeId, f.assignee) : undefined,
     f.customer ? eq(tickets.customerId, f.customer) : undefined,
@@ -43,7 +46,7 @@ export async function listTickets(tx: Tx, f: ListTicketsQuery) {
   const rows = await tx
     .select({
       id: tickets.id, number: tickets.number, subject: tickets.subject, status: tickets.status,
-      channel: tickets.channel, language: tickets.language, createdAt: tickets.createdAt,
+      priority: tickets.priority, channel: tickets.channel, language: tickets.language, createdAt: tickets.createdAt,
       firstResponseDueAt: tickets.firstResponseDueAt, firstResponseAt: tickets.firstResponseAt,
       resolutionDueAt: tickets.resolutionDueAt, solvedAt: tickets.solvedAt, pendingSince: tickets.pendingSince,
       product: products.name, team: teams.name, assignee: users.name,
@@ -66,7 +69,7 @@ export async function listTickets(tx: Tx, f: ListTicketsQuery) {
     items: rows.map((r) => {
       const sla = slaState(r, now);
       return {
-        id: r.id, number: r.number, subject: r.subject, status: r.status, channel: r.channel,
+        id: r.id, number: r.number, subject: r.subject, status: r.status, priority: r.priority, channel: r.channel,
         language: r.language, product: r.product, team: r.team, assignee: r.assignee,
         customer: { code: r.customerCode, name: r.customerName },
         createdAt: r.createdAt,
@@ -95,7 +98,7 @@ export async function getTicket(tx: Tx, ref: string) {
 
   const [{ n } = { n: 0 }] = await tx.select({ n: count() }).from(messages).where(eq(messages.ticketId, r.t.id));
   return {
-    id: r.t.id, number: r.t.number, subject: r.t.subject, status: r.t.status, channel: r.t.channel,
+    id: r.t.id, number: r.t.number, subject: r.t.subject, status: r.t.status, priority: r.t.priority, channel: r.t.channel,
     language: r.t.language, product: r.product, team: r.team, teamId: r.t.teamId,
     assignee: r.assignee, assigneeId: r.t.assigneeId,
     customer: { id: r.customer.id, code: r.customer.code, name: r.customer.name, email: r.customer.email, plan: r.customer.plan, language: r.customer.language },
@@ -121,6 +124,7 @@ export const CreateTicketBody = z.object({
   customerEmail: z.email(),
   customerName: z.string().trim().min(1).max(120).optional(),
   channel: z.enum(CHANNELS),
+  priority: z.enum(TICKET_PRIORITIES).optional(),
   productId: z.uuid().optional(),
   language: z.string().regex(/^[a-z]{2}$/).optional(),
 });
@@ -150,7 +154,7 @@ export async function createTicket(tx: Tx, tenantId: string, input: CreateTicket
   const number = await nextTicketNumber(tx, tenantId);
 
   const [ticket] = await tx.insert(tickets).values({
-    tenantId, number, subject: input.subject, channel: input.channel,
+    tenantId, number, subject: input.subject, channel: input.channel, priority: input.priority,
     language: input.language ?? customer.language,
     customerId: customer.id, productId: input.productId ?? null, slaPolicyId: policy.id,
     firstResponseDueAt: addBusinessMinutes(now, policy.firstResponseMins, cal),
@@ -169,15 +173,17 @@ export async function createTicket(tx: Tx, tenantId: string, input: CreateTicket
 
 export const UpdateTicketBody = z.object({
   status: z.enum(TICKET_STATUSES).optional(),
+  priority: z.enum(TICKET_PRIORITIES).optional(),
   teamId: z.uuid().nullable().optional(),
   assigneeId: z.uuid().nullable().optional(),
-}).refine((b) => Object.keys(b).length > 0, { message: "Send at least one of status, teamId or assigneeId." });
+}).refine((b) => Object.keys(b).length > 0, { message: "Send at least one of status, priority, teamId or assigneeId." });
 export type UpdateTicketBody = z.infer<typeof UpdateTicketBody>;
 
 export async function updateTicket(tx: Tx, tenantId: string, ref: string, input: UpdateTicketBody, now = new Date()) {
   const t = await loadTicketRow(tx, ref);
   const patch: Partial<typeof tickets.$inferInsert> = { updatedAt: now };
 
+  if (input.priority) patch.priority = input.priority;
   if (input.teamId !== undefined) {
     if (input.teamId) {
       const [team] = await tx.select({ id: teams.id }).from(teams).where(eq(teams.id, input.teamId));
