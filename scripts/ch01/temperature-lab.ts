@@ -10,12 +10,18 @@ const TEMPERATURES = [0, 0.7, 1.0];
 const tickets: { id: string; text: string }[] = JSON.parse(readFileSync("data/labels/ambiguous-10.json", "utf8"));
 
 /**
- * Step 2 · TODO. The share of labels that match the most common one.
+ * Step 1 · TODO. The share of labels that match the most common one.
  *   agreement(["bug", "bug", "how_to", "bug"]) === 0.75
  */
 export function agreement(labels: string[]): number {
   void labels;
-  throw new Error("TODO: write agreement() in scripts/ch01/temperature-lab.ts (Exercise 1.2, step 2)");
+  throw new Error("TODO: write agreement() in scripts/ch01/temperature-lab.ts (Exercise 1.2, step 1)");
+}
+
+// Checks agreement() before spending anything on model calls.
+if (agreement(["bug", "bug", "how_to", "bug"]) !== 0.75 || agreement(["a", "b"]) !== 0.5) {
+  console.log("agreement() is not right yet: agreement([\"bug\", \"bug\", \"how_to\", \"bug\"]) should be 0.75.");
+  process.exit(1);
 }
 
 /** Run tasks with at most `limit` in flight, so you stay under your rate limit. Ready to use. */
